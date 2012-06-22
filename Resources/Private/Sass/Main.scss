@@ -6,8 +6,8 @@ $width: 990px;
 $sidebar: 254px;
 
 body {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: black;
+  background-color: white;
   font-family: Arial, Helvetica
 }
 
@@ -23,6 +23,7 @@ a {
 dl {
   dt {
     display: inline;
+    font-weight: bold;
     a {
       &:link {
         color: $blue;
@@ -57,7 +58,7 @@ h3 {
 
 header {
   text-align: center;
-  border-bottom: 2px solid $grey;
+  border-bottom: 2px solid $headerGrey;
   float: left;
   width: $width;
 }

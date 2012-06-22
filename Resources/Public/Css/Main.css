@@ -1,49 +1,40 @@
-/* line 8, ../../Private/Sass/Main.scss */
 body {
   color: black;
   background-color: white;
   font-family: Arial, Helvetica;
 }
 
-/* line 15, ../../Private/Sass/Main.scss */
 a:link {
   color: red;
 }
-/* line 18, ../../Private/Sass/Main.scss */
 a:visited {
   color: red;
 }
 
-/* line 24, ../../Private/Sass/Main.scss */
 dl dt {
   display: inline;
+  font-weight: bold;
 }
-/* line 27, ../../Private/Sass/Main.scss */
 dl dt a:link {
   color: #000099;
 }
-/* line 30, ../../Private/Sass/Main.scss */
 dl dt a:visited {
   color: #000099;
 }
-/* line 35, ../../Private/Sass/Main.scss */
 dl dd {
   display: inline;
   -webkit-margin-start: 0;
 }
 
-/* line 41, ../../Private/Sass/Main.scss */
 h2 {
   text-transform: uppercase;
 }
 
-/* line 45, ../../Private/Sass/Main.scss */
 h3 {
   background-color: #cccccc;
   padding: 4px 0;
 }
 
-/* line 50, ../../Private/Sass/Main.scss */
 #wrapper {
   text-align: center;
   width: 990px;
@@ -51,28 +42,24 @@ h3 {
   margin: 10px auto;
 }
 
-/* line 58, ../../Private/Sass/Main.scss */
 header {
   text-align: center;
-  border-bottom: 2px solid #666666;
+  border-bottom: 2px solid #cccccc;
   float: left;
   width: 990px;
 }
 
-/* line 65, ../../Private/Sass/Main.scss */
 .third {
   width: 330px;
   float: left;
 }
 
-/* line 70, ../../Private/Sass/Main.scss */
 .grey {
   color: #666666;
   font-weight: normal;
   text-transform: none;
 }
 
-/* line 76, ../../Private/Sass/Main.scss */
 #main {
   width: 736px;
 }
