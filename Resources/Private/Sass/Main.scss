@@ -15,7 +15,7 @@ html {
 body {
   color: black;
   background-color: white;
-  font-family: Arial, Helvetica
+  font-family: 'Droid Sans', sans-serif;
 }
 
 a {
@@ -35,7 +35,9 @@ aside {
   float: right;
   width: $sidebar - 14px;
   padding-left: 14px;
-  // margin-left: $width - $sidebar;
+  h3 {
+    display: block;
+  }
 }
 
 dl {

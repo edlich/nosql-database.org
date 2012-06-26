@@ -7,7 +7,7 @@ html {
 body {
   color: black;
   background-color: white;
-  font-family: Arial, Helvetica;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 a:link {
@@ -25,6 +25,9 @@ aside {
   float: right;
   width: 240px;
   padding-left: 14px;
+}
+aside h3 {
+  display: block;
 }
 
 dl dt {
