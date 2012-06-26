@@ -6,6 +6,12 @@ $blue: #009;
 $width: 990px;
 $sidebar: 254px;
 
+html {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
 body {
   color: black;
   background-color: white;
@@ -26,8 +32,10 @@ article {
 }
 
 aside {
-  float: left;
-  margin-left: $width - $sidebar;
+  float: right;
+  width: $sidebar - 14px;
+  padding-left: 14px;
+  // margin-left: $width - $sidebar;
 }
 
 dl {
@@ -50,6 +58,12 @@ dl {
     float: left;
     margin-bottom: 10px;
   }
+}
+
+footer {
+  clear: both;
+  border-top: 2px solid $grey;
+  margin-top: 10px;
 }
 
 h1 {
@@ -88,6 +102,7 @@ header {
   border-bottom: 2px solid $headerGrey;
   float: left;
   width: $width;
+  margin-bottom: 10px;
 }
 
 .third {
@@ -103,4 +118,5 @@ header {
 
 #main {
   width: $width - $sidebar;
+  float: left;
 }

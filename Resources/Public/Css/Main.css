@@ -1,3 +1,9 @@
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 body {
   color: black;
   background-color: white;
@@ -16,8 +22,9 @@ article {
 }
 
 aside {
-  float: left;
-  margin-left: 736px;
+  float: right;
+  width: 240px;
+  padding-left: 14px;
 }
 
 dl dt {
@@ -36,6 +43,12 @@ dl dd {
   -webkit-margin-start: 0;
   float: left;
   margin-bottom: 10px;
+}
+
+footer {
+  clear: both;
+  border-top: 2px solid #666666;
+  margin-top: 10px;
 }
 
 h1 {
@@ -71,6 +84,7 @@ header {
   border-bottom: 2px solid #cccccc;
   float: left;
   width: 990px;
+  margin-bottom: 10px;
 }
 
 .third {
@@ -86,4 +100,5 @@ header {
 
 #main {
   width: 736px;
+  float: left;
 }
