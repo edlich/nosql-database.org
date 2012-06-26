@@ -11,19 +11,9 @@ a:visited {
   color: red;
 }
 
-article {
-  margin-bottom: 10px;
-}
-
-aside {
-  float: left;
-  margin-left: 736px;
-}
-
 dl dt {
   display: inline;
   font-weight: bold;
-  float: left;
 }
 dl dt a:link {
   color: #000099;
@@ -38,25 +28,13 @@ dl dd {
   margin-bottom: 10px;
 }
 
-h1 {
-  border-bottom: 2px solid #666666;
+h2 {
   text-transform: uppercase;
 }
 
-h2 {
+h3 {
   background-color: #cccccc;
   padding: 4px 0;
-}
-
-h3 {
-  display: inline;
-  font-size: 1.1em;
-}
-h3 a:link {
-  color: #000099;
-}
-h3 a:visited {
-  color: #000099;
 }
 
 #wrapper {

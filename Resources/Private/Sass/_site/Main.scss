@@ -1,7 +1,6 @@
 $red: #ff0000;
 $grey: #666;
 $headerGrey: #ccc;
-$headerBlue: #CCE6E6;
 $blue: #009;
 $width: 990px;
 $sidebar: 254px;
@@ -21,20 +20,10 @@ a {
   }
 }
 
-article {
-  margin-bottom: 10px;
-}
-
-aside {
-  float: left;
-  margin-left: $width - $sidebar;
-}
-
 dl {
   dt {
     display: inline;
     font-weight: bold;
-    float: left;
     a {
       &:link {
         color: $blue;
@@ -52,27 +41,13 @@ dl {
   }
 }
 
-h1 {
-  border-bottom: 2px solid $grey;
+h2 {
   text-transform: uppercase;
 }
 
-h2 {
+h3 {
   background-color: $headerGrey;
   padding: 4px 0;
-}
-
-h3 {
-  display: inline;
-  font-size: 1.1em;
-  a {
-    &:link {
-      color: $blue;
-    }
-    &:visited {
-      color: $blue;
-    }
-  }
 }
 
 #wrapper {
