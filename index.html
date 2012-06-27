@@ -1,1364 +1,1322 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>NOSQL Databases</title>
-    <meta name="author" content="Prof. Dr.Stefan Edlich">
-    <meta name="publisher" content="Prof. Dr.Stefan Edlich">
-    <meta name="copyright" content="Prof. Dr.Stefan Edlich">
-    <meta name="description"
-    content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books and much more...">
-    <meta name="page-topic" content="Forschung Technik">
-    <meta name="page-type" content="Katalog Verzeichnis">
-    <meta name="audience" content="Experten, Fans, Fortgeschrittene, Profis, Studenten">
-    <meta http-equiv="content-language" content="en-us">
-    <meta name="robots" content="index, follow">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/x-icon" href="/Resources/Public/Img/favicon.ico">
-    <link rel="stylesheet" href="Resources/Public/Css/Main.css"/>
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-1535339-3");
-        pageTracker._trackPageview();
-    } catch (err) {
-    }</script>
+	<title>NOSQL Databases</title>
+	<meta name="author" content="Prof. Dr.Stefan Edlich">
+	<meta name="publisher" content="Prof. Dr.Stefan Edlich">
+	<meta name="copyright" content="Prof. Dr.Stefan Edlich">
+	<meta name="description"
+		  content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books and much more...">
+	<meta name="page-topic" content="Forschung Technik">
+	<meta name="page-type" content="Katalog Verzeichnis">
+	<meta name="audience" content="Experten, Fans, Fortgeschrittene, Profis, Studenten">
+	<meta http-equiv="content-language" content="en-us">
+	<meta name="robots" content="index, follow">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/x-icon" href="/Resources/Public/Img/favicon.ico">
+	<link rel="stylesheet" href="Resources/Public/Css/Main.css"/>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-1535339-3");
+			pageTracker._trackPageview();
+		} catch (err) {
+		}</script>
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="third">
-                <img style="width: 251px; height: 61px;" alt="NoSQL Logo" src="Resources/Public/Img/nosql-logo.gif">
-            </div>
-            <div class="third">
-                Your Ultimate Guide to the <br />
-                Non - Relational Universe!<br />
-            </div>
-            <div class="third">
-                [the <strong>best selected</strong> nosql link <a href="links.html">Archive</a> in the web]<br />
-                <small>...never miss a <span style="text-decoration: underline;">conceptual</span>
-                    article again...<br>
-                    <strong>News Feed </strong>covering all changes </strong></small>
-                </span>
-                <small><a href="http://nosql-databases.blogspot.com/">here</a>
-                </span></small></span><small>
-                <strong>!</strong></small></strong></td>
-
-            </div>
-        </header>
-
-        <div id="main">
-            <section>
-                <article>
-                    <dl>
-                        <dt>NoSQL DEFINITION:</dt>
-                        <dd> Next Generation Databases mostly addressing some of the points: being <strong>non-relational, distributed, open-source</strong> and <strong>horizontally scalable</strong>.
-                        </dd>
-                    </dl>
-                        The original intention has been <strong>modern web-scale databases</strong>. The movement began early 2009 and is growing rapidly. Often more characteristics apply such as: <strong>schema-free,
-                        easy replication support, simple API, eventually consistent</strong> / <strong>BASE</strong> (not ACID), a <strong>huge amount of data</strong> and more. So the misleading term <em>"nosql</em>" (the community now translates it mostly with "<strong>not only sql</strong>") should be seen as an alias to something like the definition above.<small> [based on 5 sources, 11 constructive feedback emails (thanks!) and 1 disliking comment</small>. Agree / Disagree? <a href="mailto:edlich@gmail.com">Tell</a> me so! By the
-                        way: this is a strong definition and it is out there since 2009!]
-                    </article>
-                </section>
-
-                <h1>List Of NoSQL Databases <span class="grey">[currently 122+]</span></h1>
-                <p> Core NoSQL Systems: [Mostly originalted out of a Web 2.0 need]</p>
-
-                <section>
-                    <h2>Wide Column Store / Column Families</h2>
-                    <article>
-                        <h3><a href="http://hadoop.apache.org/">Hadoop / HBase</a></h3>
-                        API: <strong>Java / any writer</strong>, Protocol: <strong>any write call</strong>, Query Method: <strong>MapReduce Java / any exec</strong>, Replication: <strong>HDFS Replication</strong>, Written in: <strong>Java</strong>, Concurrency: ?, Misc:
-                        <strong>Links</strong>: 3 Books [<a href="http://www.amazon.com/Hadoop-Action-Chuck-Lam/dp/1935182196/">1</a>,
-                        <a href="http://www.amazon.com/Pro-Hadoop-Jason-Venner/dp/1430219424/">2</a>,
-                        <a href="http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/0596521979/">3</a>]
-                    </article>
-                    <article>
-                        <h3><a href="http://incubator.apache.org/cassandra/">Cassandra</a></h3>
-                        API: <strong>many </strong> <a href="http://incubator.apache.org/thrift/">&raquo; Thrift</a> <strong>languages</strong>, Protocol: ?, Query Method: <strong>MapReduce</strong>,
-                        Replicaton: , Written in: <strong>Java</strong>, Concurrency: <strong>eventually consistent</strong> , Misc: like "Big-Table on Amazon Dynamo alike", initiated by Facebook, <a href="http://www.slideshare.net/jericevans/an-introduction-to-cassandra">&raquo; Slides</a> , <a
-                        href="http://wiki.apache.org/cassandra/ClientExamples">&raquo; Clients</a>, <a href="http://www.sodeso.nl/?p=80">&raquo; Installation</a>
-                    </article>
-                    <article>
-                        <h3><a href="http://hypertable.org/">Hypertable</a></h3>
-                        API: <strong>Thrift</strong> (Java, PHP, Perl, Python, Ruby, etc.), Protocol: <strong>Thrift</strong>, Query Method: <strong>HQL, native Thrift API</strong>, Replication: <strong>HDFS Replication</strong>,
-                        Concurrency: <strong>MVCC</strong>, Consistency Model: <strong>Fully consistent </strong>Misc: High performance C++ implementation of Google's Bigtable. <a href="http://www.hypertable.com/">&raquo; Commercial support</a><br>
-                    </article>
-                    <article>
-                        <h3><a href="http://accumulo.apache.org/">Accumulo</a></h3>
-                        Accumulo is based on <strong>BigTable</strong>
-                        and is built on top of <a href="http://hadoop.apache.org/"><strong>Hadoop</strong></a>,
-                        <a href="http://zookeeper.apache.org/"><strong>Zookeeper</strong></a>,
-                        and <a href="http://thrift.apache.org/"><strong>>Thrift</strong></a>.
-                        It features improvements on the BigTable design in the form of <strong>cell-based access control</strong>,
-                        improved <strong>compression</strong>, and a server-side programming mechanism that can modify key/value pairs at various points in the data management process.
-                    </article>
-                    <article>
-                        <h3><a href="http://aws.amazon.com/simpledb/">Amazon SimpleDB</a></h3>
-                        <strong>Misc</strong>: not open source / part of AWS, <a href="http://www.apress.com/book/view/1430225335" >Book</a> (will be
-                        outperformed by DynamoDB ?!)<br>
-                    </article>
-                    <article>
-                        <h3><a href="http://www.cloudata.org/">Cloudata</a></h3>
-                        Google's Big table clone like HBase. <a
-                        href="http://www.readwriteweb.com/hack/2011/02/open-source-bigtable-cloudata.php"
-                        >&raquo; Article</a>
-                    </article>
-                    <article>
-                        <h3><a href="http://www.cloudera.com/">Cloudera</a></h3>
-                        Professional Software &amp; Services based on Hadoop.
-                    </article>
-                    <article>
-                        <h3><a href="http://scidb.org/">SciDB</a></h3>
-                        <strong>Array</strong> Data Model for Scientists, <a href="http://scidb.org/Documents/SciDB-VLDB09-paper.pdf">&raquo; paper</a>, <a href="http://scidb.org/Documents/SciDB-VLDB09-poster.pdf">&raquo; poster</a>,
-                        <a href="http://highscalability.com/blog/2010/4/29/product-scidb-a-science-oriented-dbms-at-100-petabytes.html">&raquo; HiScaBlog</a>
-                    </article>
-                    <article>
-                        <h3><a href="http://www.hpccsystems.com/">HPCC</a></h3>
-                        from <a href="http://www.lexisnexis.com">LexisNexis</a>, <a href="http://www.lexisnexis.com/government/solutions/literature/hpcc-das.pdf">info</a>, <a
-                        href="http://wikibon.org/blog/lexisnexis-hpcc-takes-on-hadoop-as-battle-for-big-data-supremacy-heats-up/">article</a>
-                    </article>
-                    <article>
-                     <h3><a href="http://stratosphere.eu/">Stratosphere</a></h3>
-                     (research system) massive parallel &amp; flexible
-                     execution, M/R generalization and extention (<a href="http://stratosphere.eu/files/NephelePACTs_10.pdf">paper</a>, <a
-                     href="http://stratosphere.eu/files/NephelePACTsDemo_poster_10.pdf">poster</a>).
-                 </article>
-                 <article>
-                    <span class="grey">[OpenNeptune, Qbase, KDI]</span>
-                </article>
-            </section>
-
-            <section>
-                <h2>Document Store</h2>
-                <article>
-                    <h3><a href="http://www.mongodb.org/">MongoDB</a></h3>
-                    API: <strong>BSON</strong>, Protocol: C, Query Method: <strong>dynamic object-based language &amp; MapReduce</strong>, Replication: <strong>Master Slave &amp;
-                    Auto-Sharding</strong>, Written in: <strong>C++</strong>,Concurrency: <strong>Update in Place</strong>. Misc: <strong>Indexing, GridFS Links:</strong>
-                    <a href="http://www.leadit.us/hands-on-tech/MongoDB-High-Performance-SQL-Free-Database">&raquo; Talk</a>,  <a
-                    href="http://www.paperplanes.de/2010/2/25/notes_on_mongodb.html">&raquo; Notes</a>
-                </article>
-                <article>
-                    <h3><a href="http://couchdb.apache.org/">CouchDB</a></h3>
-                    API: <strong>JSON</strong>,
-                    Protocol: <strong>REST</strong>,
-                    Query Method: <strong>MapReduceR of JavaScript Funcs</strong>, Replication: <strong>Master Master</strong>, Written in: <strong>Erlang</strong>, Concurrency: <strong>MVCC</strong>, <strong>Misc</strong>: <br>
-                    <strong>Links</strong>:
-                    <a href="http://couchdb.apache.org/docs/books.html">&raquo; 3 CouchDB books </a>,  <a href="http://tilgovi.github.com/couchdb-lounge/">&raquo; Couch Lounge</a>
-                    (partitioning / clusering), <a href="http://www.drdobbs.com/java/223100116">&raquo; Dr. Dobbs</a>
-                </article>
-                <article>
-                    <h3><a href="http://github.com/ravendb/ravendb">RavenDB</a></h3>
-                    .Net solution. Provides <strong>HTTP/JSON</strong>
-                    access. <strong>LINQ</strong>
-                    queries &amp; <strong>Sharding</strong>
-                    supported. <a href="http://www.codeproject.com/KB/cs/RavenDBIntro.aspx">&raquo; Misc</a>
-                </article>
-                <article>
-                    <h3><a href="http://www.clusterpoint.com/">Clusterpoint Server</a></h3>
-                    (freeware+commercial) API: <strong>XML, PHP, Java, .NET</strong> Protocols: <strong>HTTP, REST, native TCP/IP</strong> Query Method: <strong>full text search, XML, range and Xpath queries</strong>; Written in <strong>C++</strong> Concurrency: <strong>ACID-compliant, transactional, multi-master cluster</strong> Misc: <strong>Petabyte-scalable document store and full text search engine.  Information ranking. Replication. Cloudable</strong>
-                </article>
-                <article>
-                    <h3><a href="http://code.google.com/p/thrudb/">ThruDB</a></h3>
-                    (please help provide more facts!) Uses Apache <a href="http://incubator.apache.org/thrift/">Thrift</a>
-                    to integrate multiple backend databases as BerkeleyDB, Disk, MySQL, S3.
-                </article>
-                <article>
-                    <h3><a href="http://code.google.com/p/terrastore/">Terrastore</a></h3>
-                    API: <strong>Java &amp; http</strong>,
-                    Protocol: <strong>http</strong>,
-                    Language: <strong>Java</strong>,
-                    Querying: <strong>Range queries, Predicates</strong>, Replication: <strong>Partitioned with consistent
-                    hashing</strong>, Consistency: <strong>Per-record
-                    strict consistency</strong>, Misc: Based on Terracotta
-                </article>
-                <article>
-                    <h3><a href="http://www.codeproject.com/Articles/375413/RaptorDB-the-Document-Store">RaptorDB</a></h3>
-                    JSON based, Document store database with compiled <strong>.net map functions</strong> and automatic hybrid bitmap indexing and <strong>LINQ query filters</strong>
-                </article>
-                <article>
-                    <h3><a href="http://www.sisodb.com/">SisoDB</a></h3>
-                    A Document Store on top of SQL-Server.
-                </article>
-                <article>
-                    <h3><a href="http://pagenotes.com/wordpress/2011/12/08/sdb/">SDB</a></h3>
-                    For small online databases, PHP / JSON interface, implemented in PHP.
-                </article>
-                <article>
-                    <h3><a href="http://schemafreedb.com/">SchemaFreeDB</a></h3>
-                    allows powerful SQL statements through it's enhanced <strong>SFQL query language</strong>. Provides <strong>join-like</strong> operations with simple dot-notated relations. Complex queries across complex relationships at run-time. Delivered as a pure <strong> JSON-over-HTTP Web API</strong>.
-                </article>
-                <article>
-                    <span class="grey">[<a href="http://www.codeproject.com/KB/database/RaptorDB.aspx">RaptorDB</a>, CloudKit, Perservere, <a href="http://jackrabbit.apache.org/">Jackrabbit</a>]</span>
-                </article>
-            </section>
-
-            <section>
-                <h2>Key Value / Tuple Store</h2>
-                <article>
-                    <h3><a href="http://aws.amazon.com/de/dynamodb/">DynamoDB</a></h3>
-                    (will be inserted soon)
-                </article>
-                <article>
-                    <h3><a href="http://msdn.microsoft.com/en-us/library/dd179423.aspx">Azure Table Storage</a></h3>
-                    Collections of free form entities (row key, partition key, timestamp). Blob and Queue Storage available, 3 times redundant. Accessible via REST or ATOM.
-                </article>
-                <article>
-                    <h3><a href="http://www.couchbase.com/">Couchbase Server</a></h3>
-                    <strong>API: Memcached API+protocol </strong>(binary and ASCII) , <strong>most languages</strong>, Protocol: <strong>Memcached REST interface for cluster conf + management</strong>,
-                    Written in: <strong>C/C++</strong> + <strong>Erlang</strong> (clustering), Replication: <strong>Peer to Peer, fully consistent</strong>, Misc: <strong>Transparent topology changes during operation, provides memcached-compatible caching buckets, commercially supported version available</strong>,
-                    Links: <a href="wiki.membase.org">&raquo; Wiki</a>, <a href="http://www.infoq.com/news/2010/10/membase">&raquo; Article</a>
-                </article>
-                <article>
-                    <h3><a href="http://riak.basho.com/">Riak</a></h3>
-                    API: <strong>JSON</strong>,
-                    Protocol: <strong>REST</strong>,
-                    Query Method: <strong>MapReduce term matching</strong> , Scaling: <strong>Multiple     Masters</strong>; Written in: <strong>Erlang</strong>,
-                    Concurrency: <strong>eventually     consistent</strong> (stronger then MVCC via Vector Clocks), Misc<strong>:</strong> ... <strong>Links</strong>: talk <a href="http://riak.basho.com/nyc-nosql/"                                                     >&raquo;</a>,<br>
-                </article>
-                <article>
-                    <h3><a href="http://redis.io">Redis</a></h3>
-                    API:
-                    <strong>Tons of languages</strong>,
-                    Written in: <strong>C</strong>,
-                    Concurrency: <strong>in memory</strong>
-                    and saves asynchronous disk after a defined time. Append only mode
-                    available. Different kinds of fsync policies. Replication: <strong>Master / Slave</strong>,
-                    Misc: <strong>also lists, sets, sorted sets, hashes, queues</strong>. Cheat-Sheet: <a href="http://masonoise.files.wordpress.com/2010/03/redis-cheatsheet-v1.pdf">&raquo;</a>, great     slides <a href="http://simonwillison.net/static/2010/redis-tutorial/">&raquo;</a>  Admin UI <a
-                    href="http://www.servicestack.net/mythz_blog/?p=381">&raquo;</a> From the Ground up <a
-                    href="Redis%20:%20%20API:%20Tons%20of%20languages,%20Written%20in:%20C,%20Concurrency:%20in%20memory%20and%20saves%20asynchronous%20disk%20after%20a%20defined%20time.%20Append%20only%20mode%20available.%20Different%20kinds%20of%20fsync%20policies.%20Replication:%20Master%20/%20Slave,%20Misc:%20also%20lists,%20sets,%20sorted%20sets,%20hashes.%20Cheat-Sheet:+%BB,+good+slides+%BB++Admin+UI+%BB"
-                    >&raquo;</a>
-                </article>
-                <article>
-                    <h3><a href="http://code.google.com/p/leveldb/">LevelDB</a></h3>
-                    <strong>Fast</strong>
-                    &amp; Batch updates. DB from <strong>Google</strong>.
-                    Written in C++.
-                    Blog <a href="http://google-opensource.blogspot.com/2011/07/leveldb-fast-persistent-key-value-store.html">&raquo;</a>, hot Benchmark <a href="http://leveldb.googlecode.com/svn/trunk/doc/benchmark.html">&raquo;</a>, Article <a href="http://www.golem.de/1107/85298.html">&raquo;</a>
-                    (in German). Java <a href="https://github.com/fusesource/leveldbjni">access</a>.
-                </article>
-
-                <article>
-                    <h3><a href="http://sourceforge.net/projects/chordless/">Chordless</a></h3>
-                    API: <strong>Java &amp; simple RPC to vals</strong>, Protocol: <strong>internal</strong>, Query Method: <strong>M/R inside value objects</strong>, Scaling: <strong>every node is master for its slice of namespace</strong>, Written in: <strong>Java</strong>, Concurrency: <strong>serializable transaction isolation</strong>,
-                </article>
-
-                <article>
-                    <h3><a href="http://www.geniedb.com/">GenieDB</a></h3>
-                    Immediate consistency sharded KV store with an eventually consistent AP
-                    store bringing eventual  consistency issues down to the
-                    theoretical minimum. It features efficient record coalescing.
-                    GenieDB speaks SQL and co-exists /  do intertable
-                    joins with
-                    SQL RDBMs.
-                </article>
-                <article>
-                    <h3><a href="http://code.google.com/p/scalaris/"> Scalaris</a></h3>
-                    (please help provide more facts!) Written in: <strong>Erlang</strong>, Replication: <strong>Strong consistency over replicas</strong>, Concurrency: <strong>non blocking Paxos</strong>.
-                </article>
-                <article>
-                    <h3><a href="http://fallabs.com/tokyocabinet/">Tokyo Cabinet / Tyrant</a></h3>
-                    <strong>Links</strong>: nice talk <a href="http://www.infoq.com/presentations/grigorik-tokyo-cabinet-recipes">&raquo;</a>, slides <a href="http://www.scribd.com/doc/12016121/Tokyo-Cabinet-and-Tokyo-Tyrant-Presentation">&raquo;</a>, Misc: <strong>Kyoto</strong> Cabinet <a href="http://fallabs.com/kyotocabinet/">&raquo;</a>
-                </article>
-                <article>
-                    <h3><a href="http://fis-gtm.com/">GT.M</a></h3>
-                    API: <strong>M, C, Python, Perl</strong>,
-                    Protocol: <span style="font-weight: bold;">native, inprocess C</span>, Misc: Wrappers: <strong>M/DB for SimpleDB compatible HTTP</strong>
-                    <a href="http://www.mgateway.com/mdb.html">&raquo;</a>, <strong>MDB:X</strong>
-                    for XML <a href="http://mgateway.com/">&raquo;</a>,
-                    <strong>PIP</strong>
-                    for mapping to tables for SQL <a href="http://fis-pip.com/">&raquo;</a>,
-                    Features: Small footprint (17MB), Terabyte Scalability, Unicode
-                    support, Database encryption, Secure, ACID transactions (single node),
-                    eventual consistency (replication), License: AGPL v3 on x86 GNU/Linux, <strong>Links</strong>: Slides <a href="http://www.slideshare.net/robtweed/gtm-a-tried-and-tested-schemaless-database">&raquo;</a>,
-                </article>
-                <article>
-                    <h3><a href="http://scalien.com/">Scalien</a></h3>
-                    API / Protocol: <strong>http</strong>
-                    (text, html, JSON)<span style="font-weight: bold;">, C, C++, Python</span>, Java, Ruby, PHP,Perl. Concurrency: <strong>Paxos</strong>.
-                </article>
-
-                <article>
-                    <h3><a href="http://www.oracle.com/database/berkeley-db/db/index.html">Berkeley DB</a></h3>
-                    API: <strong>Many languages</strong>, Written in: <strong>C</strong>, Replication: <span style="font-weight: bold;">Master / Slave</span>, Concurrency: <strong>MVCC</strong>,
-                    License: <strong>Sleepycat</strong>,
-                    <a href="API:%20Many%20languages,%20Written%20in:%20C,%20Replication:%20Master%20/%20Slave,%20Concurrency:%20MVCC,%20License:%20Sleepycat">Berkeley DB Java Edition</a>: API: <strong>Java</strong>, Written in: <span style="font-weight: bold;">Java</span>, Replication: <span style="font-weight: bold;">Master / Slave</span>,
-                    Concurrency: <span style="font-weight: bold;">serializable transaction isolation</span>, License: <span style="font-weight: bold;">Sleepycat</span>
-                </article>
-                <article>
-                    <h3><a href="http://project-voldemort.com/">Voldemort</a></h3>
-                    Open-Source implementation of Amazons Dynamo Key-Value Store.
-                </article>
-                <article>
-                    <h3><a href="http://wiki.github.com/cliffmoon/dynomite/dynomite-framework">Dynomite</a></h3>
-                    Open-Source
-                    implementation of Amazons Dynamo Key-Value Store. written in Erlang.
-                    With "data partitioning, versioning, and read repair, and user-provided
-                    storage engines provide persistence and query processing".
-                </article>
-                <article>
-
-                    <h3><a href="http://sourceforge.net/projects/kai/">KAI</a></h3>
-                    Open Source Amazon Dnamo implementation, Misc: <a href="http://www.slideshare.net/takemaru/kai-an-open-source-implementation-of-amazons-dynamo-472179">slides</a>
-
-                </article>
-                <article>
-                    <h3><a href="http://memcachedb.org/">MemcacheDB</a></h3>
-                    API: <strong>Memcache protocol</strong>
-                    (get, set, add, replace, etc.), Written in: <strong>C</strong>, Data
-                    Model: <strong>Blob</strong>,
-                    Misc: Is Memcached writing to BerkleyDB.
-
-                </article>
-                <article>
-                    <h3><a href="http://www.faircom.com/nosql">Faircom C-Tree</a></h3>
-                    API: <span style="font-weight: bold;">C, C++, C#, Java, PHP, Perl</span>, Written in: <strong>C,C++</strong>. Misc: <span style="font-weight: bold;">Transaction logging. Client/server. Embedded. SQL wrapper</span> (not core). Been around since 1979.<br>
-                </article>
-                <article><h3><a href="http://hamsterdb.com/">HamsterDB</a></h3>:
-                    (embedded solution) ACID Compliance, Lock Free Architecture
-                    (transactions fail on conflict rather than block), Transaction logging
-                    &amp; fail recovery (redo logs), In Memory support &ndash; can be used
-                    as a non-persisted cache, B+ Trees &ndash; supported [Source: Tony Bain <a href="http://blog.tonybain.com/">&raquo;</a>]
-                </article>
-                <article><h3><a href="http://stsdb.com/">STSdb</a></h3>
-                    API: <strong>C#</strong>, Written in <strong>C#</strong>, embedded solution, generic XTable&lt;TKey,TRecord&gt; implementation,
-                    ACID transactions, snapshots, table versions, shared records, vertical data compression, custom compression, composite &amp; custom primary
-                    keys, available backend file system layer, works over multiple volumes, petabyte scalability, LINQ.</article>
-                <article><h3><a href="https://github.com/mailru/tarantool">Tarantool/Box</a></h3>
-                    API: <span style="font-weight: bold;">C, Perl, PHP, Python, Java and Ruby</span>. Written in: <strong>Objective C</strong>
-                    ,Protocol: <span style="font-weight: bold;">asynchronous binary, memcached, text (Lua console)</span>. Data model: <span style="font-weight: bold;">collections of dimensionless tuples, indexed using primary + secondary keys</span>.
-                    Concurrency: <span style="font-weight: bold;">lock-free in memory, consistent with disk (write ahead log).</span>
-                    Replication: <strong>master/slave, configurable</strong>.
-                    Other: <span style="font-weight: bold;">call Lua stored procedures.</span></article>
-                <article>            <h3><a href="http://code.google.com/p/maxtable/">Maxtable</a></h3>
-                    API: <strong>C</strong>, Query Method: <span style="font-weight: bold;">MQL, native API</span>, Replication: <strong>DFS Replication</strong>, Consistency: <span style="font-weight: bold;">strict consistency</span>  Written in: <strong>C</strong>.
-                </article>
-
-                <article><h3><a href="http://github.com/jedisct1/Pincaster">Pincaster</a></h3>
-                    For geolocalized apps. Concurrency: <span style="font-weight: bold;">in-memory with asynchronous disk writes</span>. API: <strong>HTTP/JSON</strong>. Written in: <strong>C</strong>.
-                    License: <strong>BSD</strong>.
-                </article>
-
-                <article> <h3><a href="http://www.codeproject.com/KB/database/RaptorDB.aspx">RaptorDB</a></h3>
-                    A pure key value store with optimized b+tree and murmur
-                    hashing. (In the near future it will be a JSON document database much like
-                    mongodb and couchdb.)</article>
-
-
-                <article>     <h3> <a href="https://ssl.tibcommunity.com/blogs/activespaces">TIBCO Active Spaces</a></h3>
-                    peer-to-peer distributed in-memory (with persistence) datagrid that
-                    implements and expands on the concept of the Tuple Space. Has SQL
-                    Queries and ACID (=&gt; NewSQL).</article>
-                <article> <h3><a href="http://www.allegro-c.de/">allegro-C</a></h3>
-                    Key-Value concept. Variable number of keys per record. Multiple key
-                    values, Hierarchic records. Relationships. Diff. record types in same
-                    DB. Indexing: B*-Tree. All aspects configurable. Full scripting
-                    language. Multi-user ACID. Web interfaces (PHP, Perl, ActionScript)
-                    plus Windows client.</article>
-
-
-
-                <article><h3><a href="https://github.com/shuttler/nessDB">nessDB</a></h3>
-                    A fast key-value Database (using LSM-Tree storage engine), API: <strong>Redis protocol</strong>
-                    (SET,MSET,GET,MGET,DEL etc.), Written in: ANSI C</article>
-
-
-
-                <article><h3> <a href="http://hyperdex.org/">HyperDex</a></h3>
-                    Distributed searchable key-value store. Fast (latency &amp;
-                    throughput), scalable, consistent, fault tolerance, using hyperscpace
-                    hashing. APIs for C, C++ and Python.</article>
-
-
-
-
-                <article>   <h3> <a href="http://www.erlang.org/doc/apps/mnesia/index.html">Mnesia</a></h3>
-                    (ErlangDB <a href="http://www.infoq.com/news/2007/08/mnesia">&raquo;</a>)</article>
-
-
-                <article><h3><a href="http://opensource.plurk.com/LightCloud/">LightCloud</a></h3>
-                    (based on Tokyo Tyrant)</article>
-
-
-                <article><h3><a href="http://hibari.sourceforge.net/">Hibari</a></h3>
-                    Hibari is a highly available, strongly consistent, durable, distributed
-                    key-value data store</article>
-                <article><h3><a href="http://www.iqlect.com/">BangDB</a></h3>
-                    API: <strong>Get,Put,Delete</strong>,
-                    Protocol: <strong>Native, HTTP,</strong>
-                    Flavor: <span style="font-weight: bold;">Embedded, Network, Elastic Cache</span>, Replication: <span style="font-weight: bold;">P2P based Network Overlay</span>, Written in: <strong>C++</strong>, Concurrency: ?,
-                    Misc: <span style="font-weight: bold;">robust, crash proof, Elastic, throw machines to scale linearly, Btree/Ehash</span></article>
-                <article>
-<span class="grey"><p>[Scality <a href="http://www.scality.com/"
-        >&raquo;</a>, KaTree <a href="http://www.katree.net/">&raquo;</a> TomP2P <a
-        href="http://tomp2p.net/">&raquo;</a>,
-                                        Kumofs <a href="http://github.com/etolabo/kumofs">&raquo;</a> , TreapDB
-                                        <a href="http://code.google.com/p/treapdb/">&raquo;</a>, NMDB, luxio, actord, keyspace, flare, schema-free, RAMCloud]
-</p><p>
-    [SubRecord,
-    Mo8onDb, Dovetaildb]
-</p></span>
-                </article>
-            </section>
-
-
-                                           <section>
-                                                <h2>Graph Databases <a href="http://www.graph-database.org/">&raquo;</a></h2>
-                                            </section>
-
-
-                                            <br>
-
-
-                                            <h3><a href="http://www.neo4j.org/">Neo4J</a></h3>
-                                            API: <strong>lots of langs</strong>,
-                                            Protocol: <span style="font-weight: bold;">Java embedded
-                                            / REST</span>, Query Method: <span style="font-weight: bold;">SparQL,
-                                            nativeJavaAPI, JRuby</span>, Replication: <strong>typical MySQL style master/slave</strong>,
-                                            Written in: <strong>Java</strong>,
-                                            Concurrency: <span style="font-weight: bold;">non-block
-                                            reads, writes locks involved nodes/relationships until commit</span>,
-                                            Misc: <strong>ACID</strong>
-                                            possible, Links: Video <a href="http://www.infoq.com/presentations/emil-eifrem-neo4j">&raquo;</a>, good
-                                            Blog <a href="http://blog.neo4j.org/">&raquo;</a>
-                                            <br>
-
-
-                                            <br>
-
-
-                                            <a style="color: rgb(0, 0, 153);" href="http://www.infinitegraph.com/"><strong>Infinite Graph</strong></a>:
-                                            (by Objectivity) API: <strong>Java</strong>,
-                                            Protocol: <span style="font-weight: bold;">Direct
-                                            Language Binding</span>, Query Method: <strong>Graph Navigation API,</strong>
-                                            <span style="font-weight: bold;">Predicate Language
-                                                Qualification</span>, Written in: <strong>Java (Core C++)</strong>,
-                                                Data Model:<span style="font-weight: bold;"> Labeled
-                                                Directed Multi Graph</span>, Concurrency: <span style="font-weight: bold;">Update locking on subgraphs,
-                                                concurrent non-blocking ingest</span>, Misc: <strong>Free for Qualified Startups</strong>.<br>
-
-
-                                                <br>
-
-
-                                                <a href="http://www.sones.com/">Sones</a>:
-                                                OO Graph DB, API: <strong>.NET</strong>,
-                                                Protocol: <span style="font-weight: bold;">.NET embedded,
-                                                REST, WebServices</span>, Query Method: <strong>Graph Query Language</strong>,
-                                                <strong>LINQ (M/R)</strong>,
-                                                Replication: <strong>Master-Master</strong>,
-                                                Written in: <strong>C#</strong>,
-                                                Concurrency: <strong>MVCC</strong>
-                                                <br>
-
-
-                                                <br>
-
-
-                                                <a href="http://infogrid.org/"><span
-                                                    style="font-weight: bold; color: rgb(0, 0, 153);">InfoGrid</span></a><span
-                                                    style="color: rgb(0, 0, 153);">:</span>  <span class="Apple-style-span"
-                                                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span
-                                                    class="Apple-style-span" style="font-family: Helvetica,Arial,sans-serif; text-align: left;">API:
-                                                    <strong>Java, http/REST</strong>,
-                                                    Protocol: <span style="font-weight: bold;">as API +
-                                                    XPRISO, OpenID, RSS, Atom, JSON, Java embedded</span>, Query
-                                                    Method: <span style="font-weight: bold;">Web user
-                                                    interface with html, RSS, Atom, JSON output, Java native</span>,
-                                                    Replication: <strong>peer-to-peer</strong>,
-                                                    Written in: <strong>Java,</strong>
-                                                    Concurrency: <span style="font-weight: bold;">concurrent
-                                                    reads, write lock within one MeshBase</span>, Misc: Presentation <a
-                                                    href="http://www.slideshare.net/infogrid/info-grid-core-ideas">&raquo;</a></span></span><br>
-
-
-                                                    <br>
-
-
-                                                    <a href="http://www.kobrix.com/hgdb.jsp">HyperGraphDB</a>:
-                                                    API: <strong>Java</strong>
-                                                    (and Java Langs), Written in:<strong>Java</strong>,
-                                                    Query Method: <strong>Java</strong>
-                                                    or P2P, Replication: <strong>P2P</strong>,
-                                                    Concurrency: <strong>STM</strong>,
-                                                    Misc: Open-Source, Especially for AI and Semantic Web.<br>
-
-
-                                                    <br>
-
-
-                                                    <a href="http://research.microsoft.com/en-us/projects/trinity/" rel="tag"><span
-                                                        style="font-weight: bold; color: rgb(0, 0, 153);">Trinity</span>:</a>
-                                                        API: <strong>C#</strong>,
-                                                        Protocol: <span style="font-weight: bold;">C# Language
-                                                        Binding</span>, Query Method: <span style="font-weight: bold;">Graph
-                                                        Navigation API</span>, Replication: <strong>P2P with Master Node</strong>,
-                                                        Written in: <strong>C#</strong>,
-                                                        Concurrency: <span style="font-weight: bold;">Yes
-                                                        (Transactional update in online query mode, Non-blocking read in Batch
-                                                        Mode)</span> Misc: <span style="font-weight: bold;">distributed
-                                                        in-memory storage, parallel graph computation platform<br>
-
-
-
-                                                        <br>
-
-
-
-                                                    </span><a href="http://www.sparsity-technologies.com/dex.php"><span
-                                                    style="font-weight: bold; color: rgb(0, 0, 153);">DEX</span></a>:
-                                                    API: <span style="font-weight: bold;">Java,.NET, C++,
-                                                    Blueprints Interface</span>
-                                                    Protocol: <strong>Embedded</strong>,
-                                                    Query Method: <span style="font-weight: bold;">APIs (Java,
-                                                    .Net, C++) + Gremlin (via Blueprints)</span>,
-                                                    Written in: <strong>C++</strong>,
-                                                    Data Model: <span style="font-weight: bold;">Labeled
-                                                    Directed Attributed Multigraph</span>, Concurrency: <strong>yes</strong>, Misc: Free
-                                                    community edition up to 1 Mio nodes, Links: Intro <a href="http://www.sparsity-technologies.com/dex_tutorials#dex_intro"
-                                                    >&raquo;</a>, Tutorial <a
-                                                    href="http://www.sparsity-technologies.com/dex_tutorials#dex_tutorial_java">&raquo;</a> <br>
-
-
-                                                    <br>
-
-
-                                                    <a style="color: rgb(0, 0, 153);" href="http://www.franz.com/agraph/"><strong>AllegroGraph</strong></a>:
-                                                    API: <span style="font-weight: bold;">Java, Python, Ruby,
-                                                    C#, Perl, Clojure, Lisp</span> Protocol: <strong>REST</strong>, Query Method: <span
-                                                    style="font-weight: bold;">SPARQL</span> and <strong>Prolog</strong>, Libraries: <span
-                                                    style="font-weight: bold;">Social Networking Analytics</span>
-                                                    &amp; <strong>GeoSpatial</strong>,
-                                                    Written in: <strong>Common</strong>
-                                                    <strong>Lisp</strong> ,
-                                                    Links: Learning Center <a href="http://www.franz.com/agraph/support/learning/">&raquo;</a>, Videos <a
-                                                    href="http://www.franz.com/agraph/services/conferences_seminars/">&raquo;</a><br>
-
-
-                                                    <br>
-
-
-                                                    <a style="color: rgb(0, 0, 153);" href="http://www.brightstardb.com/"><strong>BrightstarDB</strong></a>:
-                                                    A native,<strong> .NET</strong>, semantic
-                                                    web database with code first Entity Framework, <strong>LINQ</strong> and <span
-                                                    style="font-weight: bold;">OData</span> support. API: <strong>C#</strong>, Protocol:
-                                                    <strong>SPARQL HTTP, C#</strong>,
-                                                    Query Method: <span style="font-weight: bold;">LINQ,
-                                                    SPARQL</span>, Written in: <strong>C#</strong><br>
-
-
-                                                    <br>
-
-
-                                                    <a href="http://www.systap.com/bigdata.htm"><span style="color: rgb(0, 0, 153); font-weight: bold;">Bigdata</span></a>:
-                                                    API: <span style="font-weight: bold;">Java,
-                                                    Jini service discovery</span>, Concurrency: <strong>very high (MVCC)</strong>,
-                                                    Written in: <strong>Java</strong>,
-                                                    Misc: GPL + commercial, Data: <span style="font-weight: bold;">RDF
-                                                    data with inference, dynamic key-range sharding of indices</span>,
-                                                    Misc: Blog <a href="http://www.bigdata.com/blog">&raquo;</a>
-                                                    (parallel database, high-availability
-                                                    architecture, immortal database with historical views)<br>
-
-
-                                                    <br>
-
-
-                                                    <a href="http://www.sparsity-technologies.com/dex.php"><span
-                                                        style="font-weight: bold; color: rgb(0, 0, 153);"></span></a><a href="http://www.meronymy.com/"><span
-                                                        style="font-weight: bold; color: rgb(0, 0, 153);">Meronymy</span></a>:
-                                                        RDF enterprise database management system. It is
-                                                        cross-platform and
-                                                        can be used with most programming languages. Main features: high
-                                                        performance, guarantee database transactions with ACID, secure with
-                                                        ACL's, SPARQL &amp; SPARUL, ODBC &amp; JDBC drivers, RDF
-                                                        &amp; RDFS.  <a href="http://en.wikipedia.org/wiki/Meronymy_SPARQL_Database_Server">&raquo;</a><br>
-
-
-                                                        <br>
-
-
-                                                        <a href="http://www.openlinksw.com/"><span style="color: rgb(0, 0, 153);">OpenLink Virtuoso</span></a>:
-                                                        <strong>Hybrid</strong>
-                                                        DBMS covering the following models: <span style="font-weight: bold;">Relational,
-                                                        Document, Graph</span>. <br>
-
-
-                                                        <br>
-
-
-                                                        <a href="http://www.dekorte.com/projects/opensource/vertexdb/">VertexDB</a>:
-                                                        <br>
-
-
-                                                        <br>
-
-
-                                                        <a href="http://github.com/twitter/flockdb">FlockDB</a><span
-                                                        style="font-weight: bold;">:</span> by twitter<strong> </strong>
-                                                        <small><span style="font-family: Verdana;"><a
-                                                            href="http://gigaom.com/2010/04/12/twitter-open-sources-the-home-of-its-social-graph/"
-                                                            >&raquo;</a> <a href="http://github.com/twitter/flockdb">&raquo;</a><br>
-
-
-
-                                                            <br>
-
-
-
-                                                        </span></small>
-                                                        AllegroGraph:<br>
-
-
-                                                        <br>
-
-
-
-                                                        <span class="grey">[Java
-                                                            Universal Network / Graph Framework, OpenRDF / Sesame, Filament, OWLim,
-                                                            NetworkX,
-                                                            iGraph, Jena]<br>
-
-
-
-                                                            <br>
-
-
-
-                                                            <span style="color: rgb(44, 44, 44);">List of SPARQL
-                                                                implementations can be found <a href="http://www.w3.org/wiki/SparqlImplementations">here</a>.<br>
-
-
-
-                                                                <br>
-
-
-
-                                                            </span></span><span class="Apple-style-span"
-                                                            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span
-                                                            class="Apple-style-span" style="font-family: Helvetica,Arial,sans-serif; text-align: left;"></span></span><span
-                                                            style="font-family: Helvetica,Arial,sans-serif; font-weight: bold;"></span>
-
-
-                                                            <section>
-                                                                <h2>Multimodel Databases</h2>
-                                                                <article>
-                                                                    <h3><a href="http://www.orientechnologies.com/">OrientDB</a></h3>
-                                                                    Languages: <strong>Java</strong>, Schema: <strong>Has features of an Object-Database, DocumentDB, GraphDB or Key-Value DB</strong>,  Written in: <strong>Java</strong>, Query Method: <strong>Native and SQL</strong>, Misc: <strong>really fast, lightweight, ACID with recovery</strong>.
-                                                                </article>
-                                                                <article>
-                                                                    <h3><a href="http://www.arangodb.org/">ArangoDB</a></h3>
-
-                                                                    API: <strong>REST, blueprint, different programming languages like Ruby, Python, Java, PHP,</strong>
-                                                                    Data Model: <strong>document oriented &amp; graphs with shapes,</strong> Protocol: <strong>HTTP using JSON</strong>,
-                                                                    Query Method: <strong>declarative query language, query by example, map/reduce, key/value,</strong>
-                                                                    Replication: <strong>master-master asynchronous, master-master synchronous,</strong> Written in: <strong>C/C++/Javascript (using V8),</strong>
-                                                                    Concurrency: <strong>MVCC,</strong> Misc: <strong>"stored procedures" (in Ruby &amp; Javascript),schema-free schematas,</strong>
-                                                                    <small>(note: work in progress, this list includes features for V2 available in Autumn 2012),</small>
-                                                                </article>
-                                                                <article>
-                                                                    <h3><a href="http://code.google.com/p/alchemydatabase/">AlchemyDB</a></h3>
-                                                                    GraphDB + RDBMS + KV Store + Document Store. Alchemy Database is a
-                                                                    low-latency high-TPS NewSQL RDBMS embedded in the NOSQL datastore
-                                                                    redis. Extensive datastore-side-scripting is provided via deeply
-                                                                    embedded Lua.
-                                                                </article>
-                                                            </section>
-
-                                                            <section>
-                                                                <p>Soft NoSQL Systems</p>
-                                                                <small>[Mostly NOT originalted out of a Web 2.0 need but worth a look for great non relational solutions]</small>
-                                                                <h2>Object Databases <a href="http://odbms.org/">&raquo;</a></h2>
-
-                                                                <article>
-                                                                    <h3><a href="http://db4o.com">db4o</a></h3>
-                                                                    API: <strong>Java, C#, .Net Langs</strong>, Protocol: <strong>language</strong>, Query Method: <strong>QBE (by Example), Soda, Native Queries, LINQ (.NET)</strong>,
-                                                                    Replication: <strong>db4o2db4o &amp; dRS to relationals</strong>, Written in: <strong>Java</strong>, Cuncurrency: <strong>ACID serialized</strong>, Misc: <strong>embedded lib,</strong> <strong>Links</strong>:
-                                                                    DZone Refcard #53 <a href="http://refcardz.dzone.com/refcardz/getting-started-db4o">&raquo;</a>,
-                                                                    Book <a href="http://www.amazon.com/Definitive-Guide-db4o-Stefan-Edlich/dp/1590596560/">&raquo;</a>,
-                                                                </article>
-
-                                                                <article>
-                                                                    <h3>
-                                                                        <a href="http://www.versant.com">Versant</a></h3>
-                                                                        API:
-                                                                        Languages/Protocol:
-                                                                        <strong>Java, C#, C++, Python</strong>. Schema: language class model (easy changable). Modes: <strong>always consistent and eventually consistent </strong>
-                                                                        Replication: <strong>synchronous fault tolerant and peer to peer asynchronous</strong>. Concurrency:  <strong>optimistic and object based locks</strong>. Scaling: <strong>can add physical nodes on fly for scale out/in</strong> <strong>and migrate objects between nodes without impact to application code</strong>. Misc: <strong>MapReduce via parallel SQL like query across logical database groupings.</strong>
-                                                                    </article>
-
-                                                                    <article>
-                                                                        <h3>
-                                                                            <a href="http://www.objectivity.com/">Objectivity</a></h3>
-                                                                            API:
-                                                                            Languages: <strong>Java, C#, C++, Python, Smalltalk, SQL access through ODBC</strong>. Schema: <strong>native language class model, direct support for references, interoperable across all language bindings. 64 bit unique object ID (OID) supports multi exa-byte</strong>.  Platforms: <strong>32 and 64 bit Windows, Linux, Mac OSX, *Unix</strong>. Modes: <strong>always consistent (ACID).  </strong>Concurrency: <strong>locks at cluster of objects (container) level.</strong> Scaling: <strong>unique distributed architecture, dynamic addition/removal of clients &amp; servers, cloud environment ready. </strong>Replication: <strong>synchronous with quorum fault tolerant across peer to peer partitions.</strong>
-
-                                                                            Progress<br>
-
-
-
-                                                                            Gemstone<br>
-                                                                        </article>
-
-                                                                        <article>
-                                                                           <h3>
-                                                                               <a href="http://www.starcounter.com/">Starcounter</a></h3>
-                                                                               API:
-                                                                               API: <strong>C# (.NET languages)</strong>,
-                                                                               Schema: <strong>Native language class model</strong>, Query method: <strong>SQL</strong>, Concurrency: <strong>Fully ACID compliant</strong>, Storage: <strong>In-memory with transactions secured on disk</strong>, Reliability: <strong>Full checkpoint recovery</strong>,         Misc: <strong>VMDBMS - Integrating the DBMS with the virtual machine for maximal performance and ease of use</strong>.
-                                                                           </article>
-
-                                                                           <article>
-                                                                               <h3>
-                                                                                   <a href="http://www.mcobject.com/perst">Perst</a></h3>
-                                                                                   API:
-                                                                                   API: <strong>Java,Java ME,C#,Mono</strong>. Query method: <strong>OO via Perst collections, QBE, Native Queries, LINQ, native full-text search, JSQL</strong>         Replication: <strong>Async+sync (master-slave)</strong> Written in: <strong>Java, C#</strong>. <br>
-                                                                                   Caching: <strong>Object cache (LRU, weak, strong), page pool, in-memory database</strong> Concurrency: <strong>Pessimistic+optimistic (MVCC)</strong> <strong>+ async or sync (ACID) </strong>Index types: <strong>Many tree models + Time Series</strong>.         Misc.Embedded         lib., encryption, automatic recovery, native full text search, on-line         or off-line backup.
-                                                                               </article>
-
-
-                                                                               <article>
-                                                                                   <h3>
-                                                                                       <a href="http://zodb.org/">ZODB</a> </h3>
-                                                                                       API:
-                                                                                       <strong>Python</strong>,
-                                                                                       Protocol:
-                                                                                       <strong>Internal, ZEO</strong>,
-                                                                                       Query
-                                                                                       Method: <strong>Direct object access, zope.catalog, gocept.objectquery,</strong>
-                                                                                       Replication: <strong>ZEO,    ZEORAID, RelStorage</strong>
-                                                                                       Written in:  <strong>Python, C</strong> Concurrency:  <strong>MVCC</strong>, License:
-                                                                                       <strong>Zope Public License (OSI approved)</strong>
-                                                                                       Misc: Used           in production since 1998
-                                                                                   </article>
-
-                                                                                   <article>
-                                                                                      <h3><a href="http://wiki.squeak.org/squeak/2665" rel="tag">Magma</a></h3>
-                                                                                      Smalltalk DB, optimistic locking, Transactions, etc.
-                                                                                  </article>
-
-                                                                                  <article>
-                                                                                      <h3><a href="http://www.neoppod.org/">NEO</a></h3>
-                                                                                      API: <strong>Python - ZODB "Storage" interface</strong>,  Protocol: <strong>native</strong>, Query Method: <strong>transactional key-value</strong>,
-                                                                                      Replication: <strong>native</strong>,
-                                                                                      Written in: <strong>Python</strong>,
-                                                                                      Concurrency: <strong>MVCC</strong>
-                                                                                      (internally),  License: <strong>GPL "v2 or later"</strong>,  Misc: Load balancing, fault tolerant, hot-extensible.</article>
-
-                                                                                      <article>
-                                                                                        <h3><a href="http://www.picolisp.com">PicoLisp</a></h3>
-                                                                                        Language and Object Database, can be viewed as a Database Development
-                                                                                        Framework. Schema:<strong> native language class model with relations + various indexes</strong>.
-                                                                                        Queries: <strong>language build in + a small Prolog like DSL Pilog</strong>. Concurrency: <strong>synchronization + locks</strong>.
-                                                                                        Replication, distribution and fault tolerance is not implemented per default but can be implemented with native functionality. Written in C (32bit) or assembly (64bit).
-                                                                                    </article>
-                                                                                    <article>
-                                                                                        <h3><a href="http://siaqodb.com/">siaqodb</a></h3>
-                                                                                        An object database engine that currently runs on <strong>.NET, Mono, Silverlight,Windows
-                                                                                        Phone 7, MonoTouch, MonoAndroid, CompactFramework</strong>; It has
-                                                                                        implemented a Sync Framework Provider and can be <strong>synchronized</strong> with<strong> MS SQLServer</strong>; Query
-                                                                                        method:<strong>LINQ</strong>;
-                                                                                    </article>
-                                                                                    <article>
-                                                                                        <h3><a href="http://sterling.codeplex.com/">Sterling</a></h3>
-                                                                                        is a lightweight object-oriented database for .NET with support for
-                                                                                        Silverlight and Windows Phone 7. It features in-memory keys and
-                                                                                        indexes, triggers, and support for compressing and encrypting the
-                                                                                        underlying data.
-                                                                                    </article>
-                                                                                    <article>
-                                                                                        <h3><a href="http://www.morantex.com/">Morantex</a></h3>
-                                                                                        Stores .NET classes in a datapool. Build for speed. SQL Server
-                                                                                        integration. LINQ support.
-                                                                                    </article>
-                                                                                    <article>
-                                                                                        <h3><a href="http://www.eyedb.org/">EyeDB</a></h3>
-                                                                                        EyeDB is an<strong> LGPL OODBMS</strong>,
-                                                                                        provides an advanced object model (inheritance, collections, arrays,
-                                                                                        methods, triggers, constraints, reflexivity), an object definition
-                                                                                        language based on ODMG ODL, an object query and manipulation language
-                                                                                        based on ODMG OQL. Programming interfaces for C++ and Java.
-                                                                                    </article>
-
-                                                                                    <article>
-                                                                                        <h3><a href="http://highspeed-solutions.net/db.aspx">HSS Database</a></h3>
-                                                                                        Written in: <strong>100% C#</strong>,
-                                                                                        Platform: <strong>.NET 4, SL4 and WP7/WP7.1</strong>, Single DLL API, Small licensing fee
-                                                                                        for support, 90 Day Trial Available, ~100KB footprint.
-                                                                                    </article>
-                                                                                    <article>
-                                                                                        <h3><a href="http://www.framerd.org/">FramerD</a></h3>
-                                                                                        Object-Oriented Database designed to support the maintenance and
-                                                                                        sharing of knowledge bases. Optimized for pointer-intensive data
-                                                                                        structures used by semantic networks, frame systems, and many
-                                                                                        intelligent agent applications. Written in: <strong>ANSI C</strong>.
-                                                                                    </article>
-
-                                                                                    <article>
-                                                                                        <span class="grey">[StupidDB <a href="http://www.aztec-project.org/">&raquo;</a>,
-                                                                                            KiokuDB <a href="http://www.iinteractive.com/kiokudb/">&raquo;</a>
-                                                                                            (Perl solution), Durus <a href="http://www.mems-exchange.org/software/durus/">&raquo;</a>,</span>
-                                                                                        </article>
-                                                                                    </section>
-
-
-                                                                                    <section>
-                                                                                        <h2>Grid &amp; Cloud Database Solutions</h2>
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.gigaspaces.com/">GigaSpaces</a></h3>
-                                                                                            Popular SpaceBased Grid Solution.
-                                                                                        </article>
-                                                                                        <article>
-                                                                                            <h3> <a href="http://www.jboss.org/infinispan.html">Infinispan</a></h3>
-                                                                                            scalable, highly available data grid platform,<strong> open source</strong>,
-                                                                                            written in <strong>Java</strong>.
-                                                                                        </article>
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.queplix.com">Queplix</a></h3>
-                                                                                            NOSQL Data Integration Environment, can integrate relational, object, BigData &ndash; NOSQL easily and without any SQL.
-                                                                                        </article>
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.hazelcast.com/">Hazelcast</a></h3>
-                                                                                            P2P Data Grid Solution on java.util.*, On a 100 Noce EC2 Cluster <a href="http://joafip.sourceforge.net/">&raquo;</a>
-                                                                                        </article>
-                                                                                        <article>
-                                                                                            [<a href="http://joafip.sourceforge.net/">Joafip</a>, <a href="http://www.gridgain.com/">GridGain</a>, Coherence, eXtremeScale]
-                                                                                        </article>
-                                                                                    </section>
-
-                                                                                    <section>
-                                                                                        <h2>XML Databases</h2>
-                                                                                    </section>
-
-
-                                                                                    <article>
-                                                                                      <h3><a href="http://www.marklogic.com/">Mark Logic Server</a></h3>
-                                                                                      (commercial system) API: Java, .NET
-                                                                                      Protocols: HTTP,
-                                                                                      REST Query Method: XQuery,
-                                                                                      XSLT Written in: C++ (code closed,
-                                                                                      API open) Concurrency: Share-nothing
-                                                                                      cluster architecture
-                                                                                      Misc: Petabyte-scalable XML server. Cloudable. Combines application
-                                                                                      server, transactional persistent storage (XML, text, and binary), and a
-                                                                                      full-text search engine. Developer Network <a href="http://xqzone.marklogic.com/">&raquo;</a>
-                                                                                  </article>
-
-
-                                                                                  <article>
-                                                                                      <h3><a href="http://www.emc.com/products/detail/software/documentum-xdb.htm">EMC Documentum xDB</a></h3>
-                                                                                      (commercial system) API: Java, XQuery,
-                                                                                      Protocol: WebDAV, web
-                                                                                      services, Query method: XQuery, XPath, XPointer,
-                                                                                      Replication: lazy
-                                                                                      primary copy replication (master/replicas), Written in: Java,
-                                                                                      Concurrency: concurrent reads, writes with
-                                                                                      lock; transaction isolation,
-                                                                                      Misc: Fully transactional persistent DOM; versioning; multiple index
-                                                                                      types; metadata and non-XML data support; unlimited horizontal scaling.
-                                                                                      Developer Network <a href="http://developer.emc.com/xmltech">&raquo;</a>
-                                                                                  </article>
-
-                                                                                  <article>
-                                                                                      <h3><a href="http://exist-db.org/">eXist</a></h3>
-                                                                                      API: XQuery, XML:DB API,
-                                                                                      DOM, SAX, Protocols: HTTP/REST,
-                                                                                      WebDAV, SOAP, XML-RPC, Atom, Query Method: XQuery, Written in: Java
-                                                                                      (open source),
-                                                                                      Concurrency: Concurrent
-                                                                                      reads, lock on write;
-                                                                                      Misc: Entire web applications can be written in XQuery, using XSLT,
-                                                                                      XHTML, CSS, and Javascript (for AJAX functionality). (1.4)
-                                                                                      adds a
-                                                                                      new full text search index based on Apache Lucene, a lightweight URL
-                                                                                      rewriting and MVC framework, and support for XProc.
-                                                                                  </article>
-                                                                                  <article>
-                                                                                      <h3><a href="http://modis.ispras.ru/sedna/">Sedna</a></h3>
-                                                                                      Misc: ACID transactions, security, indices, hot backup. Flexible XML
-                                                                                      processing facilities include W3C XQuery implementation, tight
-                                                                                      integration of XQuery with full-text search facilities and a node-level
-                                                                                      update language.
-                                                                                  </article>
-
-                                                                                  <article>
-                                                                                      <h3><a href="http://basex.org/">BaseX</a></h3>
-                                                                                      BaseX is a fast, powerful, lightweight XML database system
-                                                                                      and
-                                                                                      XPath/XQuery processor with highly conformant support for the latest
-                                                                                      W3C Update and Full Text Recommendations. Client/Server architecture,
-                                                                                      ACID transaction support, user management, logging, Open Source,
-                                                                                      BSD-license, written in Java, runs out of the box.
-                                                                                  </article>
-
-                                                                                  <article>
-                                                                                      <h3><a href="http://www.xmlmind.com/qizx/">Qizx</a></h3>
-                                                                                      commercial and open source version, API: Java, Protocols:
-                                                                                      HTTP, REST, Query
-                                                                                      Method: XQuery, XQuery
-                                                                                      Full-Text, XQuery Update, Written in: Java, full source can be
-                                                                                      purchased,
-                                                                                      Concurrency: Concurrent
-                                                                                      reads &amp; writes, isolation, Misc: Terabyte scalable, emphasizes
-                                                                                      query speed.
-                                                                                  </article>
-                                                                                  <article>
-                                                                                      <h3><a href="http://www.oracle.com/database/berkeley-db/xml/index.html">Berkeley DB XML</a></h3>
-                                                                                      API: Many languages,
-                                                                                      Written in: C++,
-                                                                                      Query Method: XQuery,
-                                                                                      Replication: Master /
-                                                                                      Slave, Concurrency: MVCC,
-                                                                                      License: Sleepycat <br>
-                                                                                  </article>
-
-                                                                                  <article>
-                                                                                      <a href="http://xml.apache.org/xindice/">[Xindice</a>
-                                                                                      <a href="http://www.softwareag.com/de/products/wm/tamino/">Tamino</a>
-                                                                                      ]</article>
-                                                                                      <section>
-                                                                                        <h2>Multidimensional Databases</h2>
-                                                                                        <article>
-                                                                                            <h3><a href="http://globalsdb.org/">Globals:</a></h3>
-                                                                                            by Intersystems, multidimensional
-                                                                                            array.Node.js
-                                                                                            API, array based APIs (Java / .NET), and a Java based document API.
-                                                                                        </article>
-
-
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.intersystems.com/">Intersystems Cache</a></h3>
-                                                                                            Postrelational
-                                                                                            System. Multidimensional array APIs, Object APIs, Relational Support
-                                                                                            (Fully SQL capable JDBC, ODBC, etc.) and Document APIs are new
-                                                                                            in
-                                                                                            the upcoming 2012.2.x versions. Availible for
-                                                                                            Windows, Linux and OpenVMS.
-                                                                                        </article>
-
-                                                                                    </section>
-
-                                                                                    <section>
-                                                                                        <h2>Multivalue Database</h2>
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.rocketsoftware.com/u2">U2</a></h3>
-                                                                                            (UniVerse, UniData): MultiValue
-                                                                                            Databases, Data Structure: MultiValued, Supports nested
-                                                                                            entities, Virtual Metadata, API: BASIC, InterCall,
-                                                                                            Socket, .NET and Java API's, IDE: Native, Record Oriented,
-                                                                                            Scalability: automatic
-                                                                                            table space allocation, Protocol: Client Server, SOA,
-                                                                                            Terminal Line, X-OFF/X-ON, Written in: C, Query Method: Native
-                                                                                            mvQuery, (Retrieve/UniQuery) and SQL,
-                                                                                            Replication: yes, Hot
-                                                                                            standby, Concurrency: Record
-                                                                                            and File Locking (Fine and Coarse Granularity)
-                                                                                        </article>
-
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.revsoft.co.uk/openinsight.aspx">OpenInsight</a></h3>
-                                                                                            API: Basic+,
-                                                                                            .Net, COM, Socket, ODBC, Protocol: TCP/IP, Named Pipes, Telnet,
-                                                                                            VT100. HTTP/S Query Method: RList, SQL &amp; XPath Written in:
-                                                                                            Native 4GL, C, C++, Basic+, .Net,
-                                                                                            Java Replication: Hot Standby
-                                                                                            Concurrency: table &amp;/or row locking, optionally transaction based &amp; commit
-                                                                                            &amp; rollback Data structure: Relational &amp;/or
-                                                                                            MultiValue, supports nested entities Scalability: rows and tables size dynamically
-                                                                                        </article>
-
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.northgate-reality.com/">Reality</a></h3>
-                                                                                            (Northgate IS):
-                                                                                            The original MultiValue data set database, virtual machine, enquiry and
-                                                                                            rapid development environment. Delivers ultra efficiency, scalability
-                                                                                            and resilience while extended for the web and with built-in auto
-                                                                                            sizing, failsafe and more. Interoperability includes Web Services, Java
-                                                                                            Classes, XML,
-                                                                                            ActiveX, Sockets, C and, for those that have to
-                                                                                            interoperate with the SQL
-                                                                                            world, ODBC/JDBC
-                                                                                            and two-way transparent SQL data access.
-                                                                                        </article>
-
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.openqm.com/">OpenQM</a></h3>
-                                                                                            Supports nested data. Fully automated table space allocation. Concurrency
-                                                                                            control via task locks, file locks &amp; shareable/exclusive record
-                                                                                            locks. Case insensitivity option. Secondary key indices. Integrated
-                                                                                            data replication. QMBasic programming language for rapid development.
-                                                                                            OO programming integrated into QMBasic. QMClient connectivity from
-                                                                                            Visual Basic, PowerBasic, Delphi, PureBasic, ASP, PHP, C and more.
-                                                                                            Extended multivalue query language.
-                                                                                        </article>
-
-                                                                                        <article>
-                                                                                            <h3><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/gg269259%28v=EXCHG.10%29.aspx">ESENT</a></h3>
-                                                                                            (by Microsoft)  ISAM storage technology. Access using index or
-                                                                                            cursor navigation. Denormalized schemas, wide tables with sparse
-                                                                                            columns, multi-valued columns, and sparse and rich indexes. C# and
-                                                                                            Delphi drivers available. Backend for a number of MS Products as
-                                                                                            Exchange.
-                                                                                        </article>
-                                                                                        <article>
-                                                                                            <h3><a href="http://www.jbase.com/index.html">jBASE</a></h3>
-                                                                                            more info <a href="http://en.wikipedia.org/wiki/InfinityDB">&raquo;</a>
-                                                                                        </article>
-                                                                                    </section>
-
-                                                                                    <section>
-                                                                                        <h2>other NoSQL related databases</h2>
-                                                                                    </section>
-
-
-
-                                                                                    <br>
-
-
-                                                                                    <a href="http://www-01.ibm.com/software/lotus/">IBM
-                                                                                        Lotus/Domino</a>: Type: Document Store, API: Java, HTTP, IIOP, C
-                                                                                        API, REST Web Services, DXL, Languages: Java, JavaScript, LotusScript,
-                                                                                        C,
-                                                                                        @Formulas, Protocol: HTTP,
-                                                                                        NRPC, Replication: Master/Master,
-                                                                                        Written in: C<br>
-
-
-                                                                                        Concurrency: Eventually
-                                                                                        Consistent, Scaling: Replication
-                                                                                        Clusters<br>
-
-
-                                                                                        <br>
-
-
-                                                                                        <a href="http://www.mcobject.com/extremedbfamily.shtml">eXtremeDB</a>:
-                                                                                        Type: In-Memory
-                                                                                        Database; Written in: C;
-                                                                                        API: C/C++, SQL, JNI,
-                                                                                        C#(.NET), JDBC;
-                                                                                        Replication: Async+sync
-                                                                                        (master-slave), Cluster; Scalability: 64-bit and MVCC<br>
-
-
-                                                                                        <br>
-
-
-                                                                                        <a style="font-weight: bold; color: rgb(0, 0, 153);" href="http://www.raima.com/products/rdme/"
-                                                                                        title="RDM Embedded | Product Overview">RDM Embedded</a>:
-                                                                                        APIs: C++, Navigational C.
-                                                                                        Embedded Solution that is ACID Compliant with Multi-Core, On-Disk
-                                                                                        &amp;
-                                                                                        In-Memory Support. Distributed Capabilities, Hot Online Backup,
-                                                                                        supports all Main Platforms. Supported
-                                                                                        B Tree &amp; Hash Indexing. Replication: Master/Slave,
-                                                                                        Concurrency: MVCC.
-                                                                                        Client/Server: In-process/Built-in. <br>
-
-
-                                                                                        <br>
-
-
-                                                                                        <a href="http://www.unesco.org/webworld/isis/isis.htm">ISIS
-                                                                                            Family</a>: (semistructured databases) <a
-                                                                                            href="http://bvsmodelo.bvsalud.org/php/level.php?lang=en&amp;component=31">&raquo;</a><br>
-
-
-                                                                                            <a style="color: rgb(0, 0, 153);" href="http://www.prevayler.org/">Prevayler</a>:
-                                                                                            Java RAM Data structure
-                                                                                            journalling. <br>
-
-
-                                                                                            <a href="http://yserial.sourceforge.net/">Yserial</a>: Python
-                                                                                            wrapper over sqlite3<br>
-
-
-                                                                                            <br>
-
-
-                                                                                            <section>
-                                                                                                <h2>unresolved and uncategorized</h2>
-                                                                                                <article>
-                                                                                                    <h3><a href="http://www.vmware.com/products/vfabric-gemfire/overview.html">VMware vFabric GemFire</a></h3>
-                                                                                                    (coming soon!)
-                                                                                                </article>
-                                                                                            </section>
-
-
-
-                                                                                            <strong>Btrieve</strong>:
-                                                                                            (by Pervasive Software) key/index/tupel DB. Using Pages.  <a href="http://www.wordiq.com/definition/Btrieve"
-                                                                                            >&raquo;</a> (faq <a
-                                                                                            href="http://www.rothgeb.net/wordpress-2.7.1/?page_id=64">&raquo;</a>)<br>
-
-                                                                                            <a href="https://rubygems.org/gems/KirbyBase">KirbyBase</a>: Written in: <strong>Ruby</strong>. github: <a href="https://github.com/gurugeek/KirbyBase"
-                                                                                            >&raquo;</a><br>
-
-
-                                                                                            <a href="http://tokutek.com/">Tokutek:</a>
-                                                                                            <br>
-
-
-                                                                                            <a href="http://www.gnu.org/software/recutils/">Recutils:</a>
-                                                                                            GNU Tool for text files containing records and fields. Manual <a
-                                                                                            href="http://www.gnu.org/software/recutils/manual/index.html">&raquo;</a><br>
-
-
-                                                                                            <a href="http://www.eztools-software.com/tools/filedb/">FileDB:</a>
-                                                                                            Mainly targeted to Silverlight/Windows Phone developers but its also
-                                                                                            great for any .NET application where a simple local database is
-                                                                                            required, extremely Lightweight - less than 50K, stores one table per
-                                                                                            file, including index, compiled versions for Windows Phone 7,
-                                                                                            Silverlight and .NET, fast, free to use in your applications<br>
-
-                                                                                            <strong>illuminate Correlation Database</strong>
-                                                                                            <a href="http://www.datainnovationsgroup.com/">&raquo;</a>, <strong>FluidDB (Column Oriented DB)</strong>
-                                                                                            <a href="http://doc.fluidinfo.com/fluidDB/">&raquo;</a>,Fleet DB <a href="http://fleetdb.org/">&raquo;</a>,
-                                                                                            <strong>Btrieve</strong>
-                                                                                            , <br>
-
-                                                                                            Twisted Storage <a href="http://twistedstorage.com/">&raquo;</a>, Ringo, Sherpa, tin, Dryad, SkyNet, Disco
-
-                                                                                            <br>
-                                                                                            Possibly the oldest NoSQL DB: <a href="http://documentation.softwareag.com/adabas/ada814mfr/adamf/concepts/cfadais.htm">&raquo; <strong>Adabas</strong></a>
-                                                                                        </div>
-                                                                                        <aside id="sidebar">
-                                                                                            <a href="http://www.nosql-matters.org/"><img alt="NoSQL Matters" src="Resources/Public/Img/nosql-matters.gif" /></a>
-                                                                                            <h3>EVENTS</h3>
-
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    21-23 Aug NoSQL Now! San Jose <a href="http://nosql2012.dataversity.net/">&raquo;</a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    29+30 May <strong>NoSQL matters</strong> Cologne <a href="http://www.nosql-matters.org/">&raquo;</a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    22th May <strong>GOTO</strong> CPH <a href="http://gotocon.com/cph-2012/">&raquo;</a>
-                                                                                                </li>
-                                                                                                <li>9-11 May SkillsMatter Tutorials <a href="http://skillsmatter.com/event/nosql/progressive-nosql-tutorials/ac-4146"
-                                                                                                    >&raquo;</a>
-                                                                                                </li>
-                                                                                                <li>Mongo all around the world <a href="http://www.10gen.com/events">&raquo;</a></li>
-                                                                                                <li>20th Apr NoSQL <strong>RoadShow Z&uuml;rich</strong> <a href="http://nosqlroadshow.com/">&raquo;</a></li>
-                                                                                            </ul>
-                                                                                            <p>
-                                                                                                All past NoSQL Conferences <a href="past-confs.html">&raquo;</a>
-                                                                                                <br />
-                                                                                                register your event here! <a href="feedback.html">&raquo;</a>
-                                                                                            </p>
-                                                                                            <strong><span class="grey">NoSQL Summer in 27
-                                                                                                cities</span> </strong><a href="http://nosqlsummer.org/">&raquo;</a>
-
-                                                                                                <br>
-
-                                                                                                <strong>Conceptual quality articles, blogs, links, research papers, etc. </strong>
-
-                                                                                                <br>
-                                                                                                <h3>NoSQL ARCHIVE</h3>
-                                                                                                <a href="links.html">
-                                                                                                    <img  alt="NoSQL ARCHIVE" title="NoSQL ARCHIVE" src="Resources/Public/Img/archive.jpg" />
-                                                                                                </a>
-
-                                                                                                <h3>NoSQL User Stories <a href="user-stories.html">&raquo;</a></h3>
-
-                                                                                                Announcing the availability of <br> the <strong>worlds first NoSQL Book</strong>!<strong> <a href="1stBook.html">&raquo;</a></strong>
-
-                                                                                                <br>
-
-
-                                                                                                <a href="http://gotocon.com/cph-2012/"><img alt="GOTO Copenhagen" src="Resources/Public/Img/GOTO_copenhagen_logo.png" /></a>
-
-                                                                                                <br>
-
-
-                                                                                                <h3>NoSQL FORUMS [3]</h3>
-                                                                                                <ul>
-                                                                                                    <li>Global NOSQL Forum <a href="http://groups.google.de/group/nosql-discussion">&raquo;</a></li>
-                                                                                                    <li>Forum Berlin <a href="http://groups.google.de/group/nosql-berlin/topics">&raquo;</a></li>
-                                                                                                    <li>Forum France <a href="http://groups.google.fr/group/nosql-fr">&raquo;</a> </li>
-                                                                                                    <li>Forum Japan <a href="http://groups.google.com/group/nosql-ja">&raquo;</a></li>
-                                                                                                </ul>
-
-                                                                                                <h3>GREAT NoSQL NEWS FEEDS</h3>
-                                                                                                <ul>
-                                                                                                    <li>
-                                                                                                        MyNoSQL by Alex P <a href="http://nosql.mypopescu.com/">&raquo;</a><br />[He is definetely bigger...]</li>
-                                                                                                        <li><strong>NoSQLPedia</strong>
-                                                                                                            <a href="http://nosqlpedia.com/wiki/Main_Page">&raquo;</a>
-                                                                                                        </li>
-                                                                                                        <li>Survey DBs
-                                                                                                            <a href="http://nosqlpedia.com/wiki/Survey_distributed_databases">
-                                                                                                                &raquo;
-                                                                                                            </a>
-                                                                                                        </li>
-                                                                                                        <li>On Twitter: nosqlupdate <a
-                                                                                                            href="http://twitter.com/nosqlupdate">&raquo;</a>
-                                                                                                        </li>
-                                                                                                        <li>NoSQL Weekly <a href="http://www.nosqlweekly.com/">&raquo;</a> <strong>* new *</strong></li>
-                                                                                                        <li>HighScalability Blog <a href="http://highscalability.com/">&raquo;</a></li>
-                                                                                                    </ul>
-
-                                                                                                    <h3>NoSQL NEWS</h3>
-                                                                                                    <ul>
-                                                                                                        <li>MongoDB and Neo4j got new funding!</li>
-                                                                                                        <li>CouchDB &amp; Membase merge to CouchBase ! <a href="http://www.couchbase.com/?utm_source=NoSQL+Weekly+List&amp;utm_campaign=c140bfdd36-NoSQL_Weekly_Issue_11_February_10_2011">&raquo;</a></li>
-                                                                                                        <li>Basho raises $7.5M from Trifork <a
-                                                                                                            href="http://www.masshightech.com/stories/2011/02/07/daily18-Basho-raises-75M-to-expand-NoSQL-database-sales.html"
-                                                                                                            >&raquo;</a></li>
-                                                                                                            <li>More <a href="http://nosqltapes.com/"><strong>NoSQL Tapes</strong></a>
-                                                                                                                out!</li>
-                                                                                                            </ul>
-
-                                                                                                            <h3>CONCEPTS / MISC</h3>
-                                                                                                            <ul>
-                                                                                                                <li>Map/Reduce Go <a href="http://labs.google.com/papers/mapreduce.html">&raquo;</a> WP <a
-                                                                                                                    href="http://en.wikipedia.org/wiki/Mapreduce">&raquo;</a></li>
-                                                                                                                    <li>Plasma MR impl <a href="http://projects.camlcity.org/projects/plasma.html">&raquo;</a></li>
-                                                                                                                    <li>Google BigTable <a href="http://en.wikipedia.org/wiki/Bigtable">&raquo;</a></li>
-                                                                                                                </ul>
-                                                                                                                <h3>FUN</h3>
-                                                                                                                <ul>
-                                                                                                                    <li>
-                                                                                                                        The <a href="http://tatiyants.com/?p=1261"><strong>MoreSQL</strong></a> movement
-                                                                                                                    </li>
-                                                                                                                    <li>Why NoSQL is <strong>bad</strong> for startups <a href="http://labs.mudynamics.com/2010/04/01/why-nosql-is-bad-for-startups/">&raquo;</a></li>
-                                                                                                                    <li>Tweet found by Damien Katz <a href="http://browsertoolkit.com/fault-tolerance.png">&raquo;</a></li>
-                                                                                                                    <li>NoSQL East vs Oracle World <a href="http://www.cscyphers.com/blog/2009/10/30/nosql-east-vs-oracle-openworld/">&raquo;</a></li>
-                                                                                                                    <li>NoSQL Trolls <a href="http://www.snailinaturtleneck.com/blog/?p=174">&raquo;</a></li>
-                                                                                                                </ul>
-
-                                                                                                                <p>"A DBA walks into a NOSQL bar, but turns and leaves because he couldn't find a <strong>table</strong>" (webtonull)</p>
-
-                                                                                                                <h3>NewSQL Databases</h3>
-                                                                                                                <p>scalable and ACID and (relational and/or sql -access)</p>
-                                                                                                                <ul>
-                                                                                                                    <li>
-                                                                                                                        VoltDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        NuoDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Citrusleaf
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        SenseiDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Datomic
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        GenieDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        RethinkDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        ScalArc
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        ScaleDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Drizzle
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        ScaleBase
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Akiban
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Translattice
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        NimbusDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        NDB MySQL Cluster
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        HandlerSocket (Percona)
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Tokutek
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        JustOneDB
-                                                                                                                    </li>
-
-
-                                                                                                                    <li>
-                                                                                                                        Wakanda DB
-                                                                                                                    </li>
-                                                                                                                    <li>
-                                                                                                                        Memsql (new)
-                                                                                                                    </li>
-                                                                                                                </ul>
-                                                                                                                <h4>Hosted NewSQL</h4>
-                                                                                                                Database.com, Amazon RDS, MS SQL Azure, Xeround, FathomDB
-                                                                                                            </aside>
-                                                                                                            <footer>
-                                                                                                                <p>[This "NoSQL Archive" has always <strong>&gt; 40.000 unique visitors</strong> per month, it is <strong>top rated</strong> on Google for "nosql", and is the <strong>#1</strong>
-                                                                                                                    source for NoSQL <strong>system</strong>.]</p>
-                                                                                                                    <p><a href="feedback.html">&raquo; Contact &amp; Feedback </a> <a href="impressum.html">&raquo; Impressum</a></p>
-                                                                                                                </footer>
-
-                                                                                                                <!-- Start of StatCounter Code -->
-                                                                                                                <script type="text/javascript">
-                                                                                                                var sc_project = 5229882;
-                                                                                                                var sc_invisible = 1;
-                                                                                                                var sc_partition = 59;
-                                                                                                                var sc_click_stat = 1;
-                                                                                                                var sc_security = "f871774f"; </script>
-                                                                                                                <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
-                                                                                                                <noscript>
-                                                                                                                    <div class="statcounter"><a title="blogspot statistics" href="http://www.statcounter.com/blogger/"><img class="statcounter" src="http://c.statcounter.com/5229882/0/f871774f/1/" alt=""></a></div>
-                                                                                                                </noscript>
-
-
-                                                                                                                <!-- End of StatCounter Code -->
-                                                                                                            </small>
-
-
-                                                                                                        </div>
-                                                                                                    </body>
-                                                                                                    </html>
+<div id="wrapper">
+<header>
+	<div class="third">
+		<img style="width: 251px; height: 61px;" alt="NoSQL Logo" src="Resources/Public/Img/nosql-logo.gif">
+	</div>
+	<div class="third">
+		Your Ultimate Guide to the <br/>
+		Non - Relational Universe!<br/>
+	</div>
+	<div class="third">
+		[the <strong>best selected</strong> nosql link <a href="links.html">Archive</a> in the web]<br/>
+		<small>...never miss a <span style="text-decoration: underline;">conceptual</span>
+			article again...<br>
+			<strong>News Feed </strong>covering all changes </strong></small>
+		</span>
+		<small><a href="http://nosql-databases.blogspot.com/">here</a>
+			</span></small>
+		</span>
+		<small>
+			<strong>!</strong>
+		</small>
+	</div>
+</header>
+
+<div id="main">
+<section>
+	<article>
+		<dl>
+			<dt>NoSQL DEFINITION:</dt>
+			<dd> Next Generation Databases mostly addressing some of the points: being <strong>non-relational,
+				distributed, open-source</strong> and <strong>horizontally scalable</strong>.
+			</dd>
+		</dl>
+		The original intention has been <strong>modern web-scale databases</strong>. The movement began early 2009 and
+		is growing rapidly. Often more characteristics apply such as: <strong>schema-free,
+		easy replication support, simple API, eventually consistent</strong> / <strong>BASE</strong> (not ACID), a
+		<strong>huge amount of data</strong> and more. So the misleading term <em>"nosql</em>" (the community now
+		translates it mostly with "<strong>not only sql</strong>") should be seen as an alias to something like the
+		definition above.
+		<small> [based on 5 sources, 11 constructive feedback emails (thanks!) and 1 disliking comment</small>
+		. Agree / Disagree? <a href="mailto:edlich@gmail.com">Tell</a> me so! By the
+		way: this is a strong definition and it is out there since 2009!]
+	</article>
+</section>
+
+<h1>List Of NoSQL Databases <span class="grey">[currently 122+]</span></h1>
+
+<p> Core NoSQL Systems: [Mostly originalted out of a Web 2.0 need]</p>
+
+<section>
+	<h2>Wide Column Store / Column Families</h2>
+	<article>
+		<h3><a href="http://hadoop.apache.org/">Hadoop / HBase</a></h3>
+		API: <strong>Java / any writer</strong>, Protocol: <strong>any write call</strong>, Query Method: <strong>MapReduce
+		Java / any exec</strong>, Replication: <strong>HDFS Replication</strong>, Written in: <strong>Java</strong>,
+		Concurrency: ?, Misc:
+		<strong>Links</strong>: 3 Books [<a href="http://www.amazon.com/Hadoop-Action-Chuck-Lam/dp/1935182196/">1</a>,
+		<a href="http://www.amazon.com/Pro-Hadoop-Jason-Venner/dp/1430219424/">2</a>,
+		<a href="http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/0596521979/">3</a>]
+	</article>
+	<article>
+		<h3><a href="http://incubator.apache.org/cassandra/">Cassandra</a></h3>
+		API: <strong>many </strong> <a href="http://incubator.apache.org/thrift/">&raquo; Thrift</a>
+		<strong>languages</strong>, Protocol: ?, Query Method: <strong>MapReduce</strong>,
+		Replicaton: , Written in: <strong>Java</strong>, Concurrency: <strong>eventually consistent</strong> , Misc:
+		like "Big-Table on Amazon Dynamo alike", initiated by Facebook, <a
+			href="http://www.slideshare.net/jericevans/an-introduction-to-cassandra">&raquo; Slides</a> , <a
+			href="http://wiki.apache.org/cassandra/ClientExamples">&raquo; Clients</a>, <a
+			href="http://www.sodeso.nl/?p=80">&raquo; Installation</a>
+	</article>
+	<article>
+		<h3><a href="http://hypertable.org/">Hypertable</a></h3>
+		API: <strong>Thrift</strong> (Java, PHP, Perl, Python, Ruby, etc.), Protocol: <strong>Thrift</strong>, Query
+		Method: <strong>HQL, native Thrift API</strong>, Replication: <strong>HDFS Replication</strong>,
+		Concurrency: <strong>MVCC</strong>, Consistency Model: <strong>Fully consistent </strong>Misc: High performance
+		C++ implementation of Google's Bigtable. <a href="http://www.hypertable.com/">&raquo; Commercial support</a><br>
+	</article>
+	<article>
+		<h3><a href="http://accumulo.apache.org/">Accumulo</a></h3>
+		Accumulo is based on <strong>BigTable</strong>
+		and is built on top of <a href="http://hadoop.apache.org/"><strong>Hadoop</strong></a>,
+		<a href="http://zookeeper.apache.org/"><strong>Zookeeper</strong></a>,
+		and <a href="http://thrift.apache.org/"><strong>>Thrift</strong></a>.
+		It features improvements on the BigTable design in the form of <strong>cell-based access control</strong>,
+		improved <strong>compression</strong>, and a server-side programming mechanism that can modify key/value pairs
+		at various points in the data management process.
+	</article>
+	<article>
+		<h3><a href="http://aws.amazon.com/simpledb/">Amazon SimpleDB</a></h3>
+		<strong>Misc</strong>: not open source / part of AWS, <a
+			href="http://www.apress.com/book/view/1430225335">Book</a> (will be
+		outperformed by DynamoDB ?!)<br>
+	</article>
+	<article>
+		<h3><a href="http://www.cloudata.org/">Cloudata</a></h3>
+		Google's Big table clone like HBase. <a
+			href="http://www.readwriteweb.com/hack/2011/02/open-source-bigtable-cloudata.php"
+			>&raquo; Article</a>
+	</article>
+	<article>
+		<h3><a href="http://www.cloudera.com/">Cloudera</a></h3>
+		Professional Software &amp; Services based on Hadoop.
+	</article>
+	<article>
+		<h3><a href="http://scidb.org/">SciDB</a></h3>
+		<strong>Array</strong> Data Model for Scientists,
+		<a href="http://scidb.org/Documents/SciDB-VLDB09-paper.pdf">&raquo; paper</a>, <a
+			href="http://scidb.org/Documents/SciDB-VLDB09-poster.pdf">&raquo; poster</a>,
+		<a href="http://highscalability.com/blog/2010/4/29/product-scidb-a-science-oriented-dbms-at-100-petabytes.html">&raquo;
+			HiScaBlog</a>
+	</article>
+	<article>
+		<h3><a href="http://www.hpccsystems.com/">HPCC</a></h3>
+		from <a href="http://www.lexisnexis.com">LexisNexis</a>, <a
+			href="http://www.lexisnexis.com/government/solutions/literature/hpcc-das.pdf">info</a>, <a
+			href="http://wikibon.org/blog/lexisnexis-hpcc-takes-on-hadoop-as-battle-for-big-data-supremacy-heats-up/">article</a>
+	</article>
+	<article>
+		<h3><a href="http://stratosphere.eu/">Stratosphere</a></h3>
+		(research system) massive parallel &amp; flexible
+		execution, M/R generalization and extention (<a
+			href="http://stratosphere.eu/files/NephelePACTs_10.pdf">paper</a>, <a
+			href="http://stratosphere.eu/files/NephelePACTsDemo_poster_10.pdf">poster</a>).
+	</article>
+	<article>
+		<span class="grey">[OpenNeptune, Qbase, KDI]</span>
+	</article>
+</section>
+
+<section>
+	<h2>Document Store</h2>
+	<article>
+		<h3><a href="http://www.mongodb.org/">MongoDB</a></h3>
+		API: <strong>BSON</strong>, Protocol: C, Query Method: <strong>dynamic object-based language &amp;
+		MapReduce</strong>, Replication: <strong>Master Slave &amp;
+		Auto-Sharding</strong>, Written in: <strong>C++</strong>,Concurrency: <strong>Update in Place</strong>. Misc:
+		<strong>Indexing, GridFS Links:</strong>
+		<a href="http://www.leadit.us/hands-on-tech/MongoDB-High-Performance-SQL-Free-Database">&raquo; Talk</a>, <a
+			href="http://www.paperplanes.de/2010/2/25/notes_on_mongodb.html">&raquo; Notes</a>
+	</article>
+	<article>
+		<h3><a href="http://couchdb.apache.org/">CouchDB</a></h3>
+		API: <strong>JSON</strong>,
+		Protocol: <strong>REST</strong>,
+		Query Method: <strong>MapReduceR of JavaScript Funcs</strong>, Replication: <strong>Master Master</strong>,
+		Written in: <strong>Erlang</strong>, Concurrency: <strong>MVCC</strong>, <strong>Misc</strong>: <br>
+		<strong>Links</strong>:
+		<a href="http://couchdb.apache.org/docs/books.html">&raquo; 3 CouchDB books </a>, <a
+			href="http://tilgovi.github.com/couchdb-lounge/">&raquo; Couch Lounge</a>
+		(partitioning / clusering), <a href="http://www.drdobbs.com/java/223100116">&raquo; Dr. Dobbs</a>
+	</article>
+	<article>
+		<h3><a href="http://github.com/ravendb/ravendb">RavenDB</a></h3>
+		.Net solution. Provides <strong>HTTP/JSON</strong>
+		access. <strong>LINQ</strong>
+		queries &amp; <strong>Sharding</strong>
+		supported. <a href="http://www.codeproject.com/KB/cs/RavenDBIntro.aspx">&raquo; Misc</a>
+	</article>
+	<article>
+		<h3><a href="http://www.clusterpoint.com/">Clusterpoint Server</a></h3>
+		(freeware+commercial) API: <strong>XML, PHP, Java, .NET</strong> Protocols: <strong>HTTP, REST, native
+		TCP/IP</strong> Query Method: <strong>full text search, XML, range and Xpath queries</strong>; Written in
+		<strong>C++</strong> Concurrency: <strong>ACID-compliant, transactional, multi-master cluster</strong> Misc:
+		<strong>Petabyte-scalable document store and full text search engine. Information ranking. Replication.
+			Cloudable</strong>
+	</article>
+	<article>
+		<h3><a href="http://code.google.com/p/thrudb/">ThruDB</a></h3>
+		(please help provide more facts!) Uses Apache <a href="http://incubator.apache.org/thrift/">Thrift</a>
+		to integrate multiple backend databases as BerkeleyDB, Disk, MySQL, S3.
+	</article>
+	<article>
+		<h3><a href="http://code.google.com/p/terrastore/">Terrastore</a></h3>
+		API: <strong>Java &amp; http</strong>,
+		Protocol: <strong>http</strong>,
+		Language: <strong>Java</strong>,
+		Querying: <strong>Range queries, Predicates</strong>, Replication: <strong>Partitioned with consistent
+		hashing</strong>, Consistency: <strong>Per-record
+		strict consistency</strong>, Misc: Based on Terracotta
+	</article>
+	<article>
+		<h3><a href="http://www.codeproject.com/Articles/375413/RaptorDB-the-Document-Store">RaptorDB</a></h3>
+		JSON based, Document store database with compiled <strong>.net map functions</strong> and automatic hybrid
+		bitmap indexing and <strong>LINQ query filters</strong>
+	</article>
+	<article>
+		<h3><a href="http://www.sisodb.com/">SisoDB</a></h3>
+		A Document Store on top of SQL-Server.
+	</article>
+	<article>
+		<h3><a href="http://pagenotes.com/wordpress/2011/12/08/sdb/">SDB</a></h3>
+		For small online databases, PHP / JSON interface, implemented in PHP.
+	</article>
+	<article>
+		<h3><a href="http://schemafreedb.com/">SchemaFreeDB</a></h3>
+		allows powerful SQL statements through it's enhanced <strong>SFQL query language</strong>. Provides <strong>join-like</strong>
+		operations with simple dot-notated relations. Complex queries across complex relationships at run-time.
+		Delivered as a pure <strong> JSON-over-HTTP Web API</strong>.
+	</article>
+	<article class="grey">
+		[<a href="http://www.codeproject.com/KB/database/RaptorDB.aspx">RaptorDB</a>, CloudKit, Perservere, <a href="http://jackrabbit.apache.org/">Jackrabbit</a>]
+	</article>
+</section>
+
+<section>
+<h2>Key Value / Tuple Store</h2>
+<article>
+	<h3><a href="http://aws.amazon.com/de/dynamodb/">DynamoDB</a></h3>
+	(will be inserted soon)
+</article>
+<article>
+	<h3><a href="http://msdn.microsoft.com/en-us/library/dd179423.aspx">Azure Table Storage</a></h3>
+	Collections of free form entities (row key, partition key, timestamp). Blob and Queue Storage available, 3 times
+	redundant. Accessible via REST or ATOM.
+</article>
+<article>
+	<h3><a href="http://www.couchbase.com/">Couchbase Server</a></h3>
+	<strong>API: Memcached API+protocol </strong>(binary and ASCII) , <strong>most languages</strong>, Protocol:
+	<strong>Memcached REST interface for cluster conf + management</strong>,
+	Written in: <strong>C/C++</strong> + <strong>Erlang</strong> (clustering), Replication: <strong>Peer to Peer, fully
+	consistent</strong>, Misc: <strong>Transparent topology changes during operation, provides memcached-compatible
+	caching buckets, commercially supported version available</strong>,
+	Links: <a href="http://wiki.membase.org">&raquo; Wiki</a>, <a href="http://www.infoq.com/news/2010/10/membase">&raquo;
+	Article</a>
+</article>
+<article>
+	<h3><a href="http://riak.basho.com/">Riak</a></h3>
+	API: <strong>JSON</strong>,
+	Protocol: <strong>REST</strong>,
+	Query Method: <strong>MapReduce term matching</strong> , Scaling: <strong>Multiple Masters</strong>; Written in:
+	<strong>Erlang</strong>,
+	Concurrency: <strong>eventually consistent</strong> (stronger then MVCC via Vector Clocks), Misc<strong>:</strong>
+	... <strong>Links</strong>: talk <a href="http://riak.basho.com/nyc-nosql/">&raquo;</a>,<br>
+</article>
+<article>
+	<h3><a href="http://redis.io">Redis</a></h3>
+	API:
+	<strong>Tons of languages</strong>,
+	Written in: <strong>C</strong>,
+	Concurrency: <strong>in memory</strong>
+	and saves asynchronous disk after a defined time. Append only mode
+	available. Different kinds of fsync policies. Replication: <strong>Master / Slave</strong>,
+	Misc: <strong>also lists, sets, sorted sets, hashes, queues</strong>. Cheat-Sheet: <a href="http://masonoise.files.wordpress.com/2010/03/redis-cheatsheet-v1.pdf">&raquo;</a>, great slides <a href="http://simonwillison.net/static/2010/redis-tutorial/">&raquo;</a> Admin UI <a	href="http://www.servicestack.net/mythz_blog/?p=381">&raquo;</a> From the Ground up <a href="http://blog.mjrusso.com/2010/10/17/redis-from-the-ground-up.html" >&raquo;</a>
+</article>
+<article>
+	<h3><a href="http://code.google.com/p/leveldb/">LevelDB</a></h3>
+	<strong>Fast</strong>
+	&amp; Batch updates. DB from <strong>Google</strong>.
+	Written in C++.
+	Blog <a
+		href="http://google-opensource.blogspot.com/2011/07/leveldb-fast-persistent-key-value-store.html">&raquo;</a>,
+	hot Benchmark <a href="http://leveldb.googlecode.com/svn/trunk/doc/benchmark.html">&raquo;</a>, Article <a
+		href="http://www.golem.de/1107/85298.html">&raquo;</a>
+	(in German). Java <a href="https://github.com/fusesource/leveldbjni">access</a>.
+</article>
+
+<article>
+	<h3><a href="http://sourceforge.net/projects/chordless/">Chordless</a></h3>
+	API: <strong>Java &amp; simple RPC to vals</strong>, Protocol: <strong>internal</strong>, Query Method: <strong>M/R
+	inside value objects</strong>, Scaling: <strong>every node is master for its slice of namespace</strong>, Written
+	in: <strong>Java</strong>, Concurrency: <strong>serializable transaction isolation</strong>,
+</article>
+
+<article>
+	<h3><a href="http://www.geniedb.com/">GenieDB</a></h3>
+	Immediate consistency sharded KV store with an eventually consistent AP
+	store bringing eventual consistency issues down to the
+	theoretical minimum. It features efficient record coalescing.
+	GenieDB speaks SQL and co-exists / do intertable
+	joins with
+	SQL RDBMs.
+</article>
+<article>
+	<h3><a href="http://code.google.com/p/scalaris/"> Scalaris</a></h3>
+	(please help provide more facts!) Written in: <strong>Erlang</strong>, Replication: <strong>Strong consistency over
+	replicas</strong>, Concurrency: <strong>non blocking Paxos</strong>.
+</article>
+<article>
+	<h3><a href="http://fallabs.com/tokyocabinet/">Tokyo Cabinet / Tyrant</a></h3>
+	<strong>Links</strong>: nice talk <a href="http://www.infoq.com/presentations/grigorik-tokyo-cabinet-recipes">&raquo;</a>, slides
+	<a href="http://www.scribd.com/doc/12016121/Tokyo-Cabinet-and-Tokyo-Tyrant-Presentation">&raquo;</a>, Misc:
+	<strong>Kyoto</strong> Cabinet <a href="http://fallabs.com/kyotocabinet/">&raquo;</a>
+</article>
+<article>
+	<h3><a href="http://fis-gtm.com/">GT.M</a></h3>
+	API: <strong>M, C, Python, Perl</strong>,
+	Protocol: <strong>native, inprocess C</strong>, Misc: Wrappers: <strong>M/DB for SimpleDB
+	compatible HTTP</strong>
+	<a href="http://www.mgateway.com/mdb.html">&raquo;</a>, <strong>MDB:X</strong>
+	for XML <a href="http://mgateway.com/">&raquo;</a>,
+	<strong>PIP</strong>
+	for mapping to tables for SQL <a href="http://fis-pip.com/">&raquo;</a>,
+	Features: Small footprint (17MB), Terabyte Scalability, Unicode
+	support, Database encryption, Secure, ACID transactions (single node),
+	eventual consistency (replication), License: AGPL v3 on x86 GNU/Linux, <strong>Links</strong>: Slides
+	<a href="http://www.slideshare.net/robtweed/gtm-a-tried-and-tested-schemaless-database">&raquo;</a>,
+</article>
+<article>
+	<h3><a href="http://scalien.com/">Scalien</a></h3>
+	API / Protocol: <strong>http</strong>
+	(text, html, JSON)<strong>, C, C++, Python</strong>, Java, Ruby, PHP,Perl. Concurrency:
+	<strong>Paxos</strong>.
+</article>
+
+<article>
+	<h3><a href="http://www.oracle.com/database/berkeley-db/db/index.html">Berkeley DB</a></h3>
+	API: <strong>Many languages</strong>, Written in: <strong>C</strong>, Replication: <strong>Master / Slave</strong>,
+	Concurrency: <strong>MVCC</strong>,
+	License: <strong>Sleepycat</strong>,
+	<a href="http://www.oracle.com/technetwork/database/berkeleydb/overview/index-093405.html">Berkeley DB Java Edition</a>: API: <strong>Java</strong>, Written in: <strong>Java</strong>,
+	Replication: <strong>Master / Slave</strong>,
+	Concurrency: <strong>serializable transaction isolation</strong>, License: <strong>Sleepycat</strong>
+</article>
+<article>
+	<h3><a href="http://project-voldemort.com/">Voldemort</a></h3>
+	Open-Source implementation of Amazons Dynamo Key-Value Store.
+</article>
+<article>
+	<h3><a href="http://wiki.github.com/cliffmoon/dynomite/dynomite-framework">Dynomite</a></h3>
+	Open-Source
+	implementation of Amazons Dynamo Key-Value Store. written in Erlang.
+	With "data partitioning, versioning, and read repair, and user-provided
+	storage engines provide persistence and query processing".
+</article>
+<article>
+
+	<h3><a href="http://sourceforge.net/projects/kai/">KAI</a></h3>
+	Open Source Amazon Dnamo implementation, Misc: <a
+		href="http://www.slideshare.net/takemaru/kai-an-open-source-implementation-of-amazons-dynamo-472179">slides</a>
+
+</article>
+<article>
+	<h3><a href="http://memcachedb.org/">MemcacheDB</a></h3>
+	API: <strong>Memcache protocol</strong>
+	(get, set, add, replace, etc.), Written in: <strong>C</strong>, Data
+	Model: <strong>Blob</strong>,
+	Misc: Is Memcached writing to BerkleyDB.
+
+</article>
+<article>
+	<h3><a href="http://www.faircom.com/nosql">Faircom C-Tree</a></h3>
+	API: <strong>C, C++, C#, Java, PHP, Perl</strong>, Written in: <strong>C,C++</strong>. Misc:
+	<strong>Transaction logging. Client/server. Embedded. SQL wrapper</strong> (not core). Been
+	around since 1979.<br>
+</article>
+<article><h3><a href="http://hamsterdb.com/">HamsterDB</a></h3>:
+	(embedded solution) ACID Compliance, Lock Free Architecture
+	(transactions fail on conflict rather than block), Transaction logging
+	&amp; fail recovery (redo logs), In Memory support &ndash; can be used
+	as a non-persisted cache, B+ Trees &ndash; supported [Source: Tony Bain <a
+			href="http://blog.tonybain.com/">&raquo;</a>]
+</article>
+<article><h3><a href="http://stsdb.com/">STSdb</a></h3>
+	API: <strong>C#</strong>, Written in <strong>C#</strong>, embedded solution, generic XTable&lt;TKey,TRecord&gt;
+	implementation,
+	ACID transactions, snapshots, table versions, shared records, vertical data compression, custom compression,
+	composite &amp; custom primary
+	keys, available backend file system layer, works over multiple volumes, petabyte scalability, LINQ.
+</article>
+<article><h3><a href="https://github.com/mailru/tarantool">Tarantool/Box</a></h3>
+	API: <strong>C, Perl, PHP, Python, Java and Ruby</strong>. Written in: <strong>Objective
+		C</strong>
+	,Protocol: <strong>asynchronous binary, memcached, text (Lua console)</strong>. Data model:
+	<strong>collections of dimensionless tuples, indexed using primary + secondary keys</strong>.
+	Concurrency: <strong>lock-free in memory, consistent with disk (write ahead log).</strong>
+	Replication: <strong>master/slave, configurable</strong>.
+	Other: <strong>call Lua stored procedures.</strong></article>
+<article><h3><a href="http://code.google.com/p/maxtable/">Maxtable</a></h3>
+	API: <strong>C</strong>, Query Method: <strong>MQL, native API</strong>, Replication:
+	<strong>DFS Replication</strong>, Consistency: <strong>strict consistency</strong> Written
+	in: <strong>C</strong>.
+</article>
+
+<article><h3><a href="http://github.com/jedisct1/Pincaster">Pincaster</a></h3>
+	For geolocalized apps. Concurrency: <strong>in-memory with asynchronous disk writes</strong>.
+	API: <strong>HTTP/JSON</strong>. Written in: <strong>C</strong>.
+	License: <strong>BSD</strong>.
+</article>
+
+<article><h3><a href="http://www.codeproject.com/KB/database/RaptorDB.aspx">RaptorDB</a></h3>
+	A pure key value store with optimized b+tree and murmur
+	hashing. (In the near future it will be a JSON document database much like
+	mongodb and couchdb.)
+</article>
+
+<article><h3><a href="https://ssl.tibcommunity.com/blogs/activespaces">TIBCO Active Spaces</a></h3>
+	peer-to-peer distributed in-memory (with persistence) datagrid that
+	implements and expands on the concept of the Tuple Space. Has SQL
+	Queries and ACID (=&gt; NewSQL).
+</article>
+<article><h3><a href="http://www.allegro-c.de/">allegro-C</a></h3>
+	Key-Value concept. Variable number of keys per record. Multiple key
+	values, Hierarchic records. Relationships. Diff. record types in same
+	DB. Indexing: B*-Tree. All aspects configurable. Full scripting
+	language. Multi-user ACID. Web interfaces (PHP, Perl, ActionScript)
+	plus Windows client.
+</article>
+
+<article><h3><a href="https://github.com/shuttler/nessDB">nessDB</a></h3>
+	A fast key-value Database (using LSM-Tree storage engine), API: <strong>Redis protocol</strong>
+	(SET,MSET,GET,MGET,DEL etc.), Written in: ANSI C
+</article>
+
+<article><h3><a href="http://hyperdex.org/">HyperDex</a></h3>
+	Distributed searchable key-value store. Fast (latency &amp;
+	throughput), scalable, consistent, fault tolerance, using hyperscpace
+	hashing. APIs for C, C++ and Python.
+</article>
+
+<article><h3><a href="http://www.erlang.org/doc/apps/mnesia/index.html">Mnesia</a></h3>
+	(ErlangDB <a href="http://www.infoq.com/news/2007/08/mnesia">&raquo;</a>)
+</article>
+
+<article><h3><a href="http://opensource.plurk.com/LightCloud/">LightCloud</a></h3>
+	(based on Tokyo Tyrant)
+</article>
+
+<article><h3><a href="http://hibari.sourceforge.net/">Hibari</a></h3>
+	Hibari is a highly available, strongly consistent, durable, distributed
+	key-value data store
+</article>
+<article>
+	<h3><a href="http://www.iqlect.com/">BangDB</a></h3>
+	API: <strong>Get,Put,Delete</strong>,
+	Protocol: <strong>Native, HTTP,</strong>
+	Flavor: <strong>Embedded, Network, Elastic Cache</strong>, Replication: <strong>P2P based Network Overlay</strong>, Written in: <strong>C++</strong>, Concurrency:
+	?,
+	Misc: <span
+			style="font-weight: bold;">robust, crash proof, Elastic, throw machines to scale linearly, Btree/Ehash</span>
+</article>
+<article class="grey">
+	<p>
+		[Scality <a href="http://www.scality.com/"
+			>&raquo;</a>, KaTree <a href="http://www.katree.net/">&raquo;</a> TomP2P <a
+			href="http://tomp2p.net/">&raquo;</a>,
+		Kumofs <a href="http://github.com/etolabo/kumofs">&raquo;</a> , TreapDB
+		<a href="http://code.google.com/p/treapdb/">&raquo;</a>, NMDB, luxio, actord, keyspace, flare, schema-free,
+		RAMCloud]
+	</p>
+
+	<p>
+		[SubRecord,
+		Mo8onDb, Dovetaildb]
+	</p>
+</article>
+</section>
+
+
+<section>
+	<h2>Graph Databases <a href="http://www.graph-database.org/">&raquo;</a></h2>
+	<article><h3><a href="http://www.neo4j.org/">Neo4J</a></h3>
+		API: <strong>lots of langs</strong>,
+		Protocol: <strong>Java embedded / REST</strong>, Query Method: <strong>SparQL, nativeJavaAPI, JRuby</strong>,
+		Replication: <strong>typical MySQL style
+			master/slave</strong>,
+		Written in: <strong>Java</strong>, Concurrency: <strong>non-block reads, writes locks involved
+			nodes/relationships until commit</strong>,
+		Misc: <strong>ACID</strong>
+		possible, Links: Video <a href="http://www.infoq.com/presentations/emil-eifrem-neo4j">&raquo;</a>, good Blog <a
+				href="http://blog.neo4j.org/">&raquo;</a></article>
+
+
+	<article><h3><a href="http://www.infinitegraph.com/">Infinite Graph</a></h3>
+		(by Objectivity) API: <strong>Java</strong>,
+		Protocol: <strong>Direct Language Binding</strong>, Query Method: <strong>Graph Navigation API,</strong>
+		<strong>Predicate Language Qualification</strong>, Written in: <strong>Java (Core C++)</strong>,
+		Data Model:<strong> Labeled Directed Multi Graph</strong>, Concurrency: <strong>Update locking on subgraphs,
+			concurrent non-blocking ingest</strong>, Misc: <strong>Free for Qualified Startups</strong>.
+	</article>
+	<article><h3><a href="http://www.sones.com/">Sones</a></h3>
+		OO Graph DB, API: <strong>.NET</strong>, Protocol: <strong>.NET embedded, REST, WebServices</strong>, Query
+		Method: <strong>Graph Query Language</strong>,
+		<strong>LINQ (M/R)</strong>,
+		Replication: <strong>Master-Master</strong>,
+		Written in: <strong>C#</strong>,
+		Concurrency: <strong>MVCC</strong></article>
+	<article><h3><a href="http://infogrid.org/">InfoGrid</a></h3>
+		API: <strong>Java, http/REST</strong>, Protocol: <strong>as API + XPRISO, OpenID, RSS, Atom, JSON, Java
+			embedded</strong>, Query Method: <strong>Web user interface with html, RSS, Atom, JSON output, Java
+			native</strong>,
+		Replication: <strong>peer-to-peer</strong>,
+		Written in: <strong>Java,</strong>
+		Concurrency: <strong>concurrent reads, write lock within one MeshBase</strong>, Misc: Presentation <a
+				href="http://www.slideshare.net/infogrid/info-grid-core-ideas">&raquo;</a></article>
+	<article><h3><a href="http://www.kobrix.com/hgdb.jsp">HyperGraphDB</a></h3>
+		API: <strong>Java</strong>
+		(and Java Langs), Written in:<strong>Java</strong>,
+		Query Method: <strong>Java</strong>
+		or P2P, Replication: <strong>P2P</strong>,
+		Concurrency: <strong>STM</strong>,
+		Misc: Open-Source, Especially for AI and Semantic Web.
+	</article>
+	<article><h3><a href="http://research.microsoft.com/en-us/projects/trinity/">Trinity</a></h3>
+		API: <strong>C#</strong>, Protocol: <strong>C# Language Binding</strong>, Query Method: <strong>Graph Navigation
+			API</strong>, Replication: <strong>P2P with Master Node</strong>,
+		Written in: <strong>C#</strong>, Concurrency: <strong>Yes (Transactional update in online query mode,
+			Non-blocking read
+			in Batch Mode)</strong> Misc: <strong>distributed in-memory storage, parallel graph computation
+			platform</strong><a href="http://www.sparsity-technologies.com/dex.php">DEX</a>:
+		API: <strong>Java, .NET, C++, Blueprints Interface</strong>
+		Protocol: <strong>Embedded</strong>, Query Method: <strong>APIs (Java, .Net, C++) + Gremlin (via
+			Blueprints)</strong>,
+		Written in: <strong>C++</strong>,
+		Data Model: <strong>Labeled Directed Attributed Multigraph</strong>, Concurrency:
+		<strong>yes</strong>, Misc: Free community edition up to 1 Mio nodes, Links: Intro
+		<a href="http://www.sparsity-technologies.com/dex_tutorials#dex_intro">&raquo;</a>, Tutorial
+		<a href="http://www.sparsity-technologies.com/dex_tutorials#dex_tutorial_java">&raquo;</a>
+	</article>
+
+	<article><h3><a href="http://www.franz.com/agraph/">AllegroGraph</a></h3>
+		API: <strong>Java, Python, Ruby, C#, Perl, Clojure, Lisp</strong> Protocol:
+		<strong>REST</strong>,
+		Query Method: <strong>SPARQL</strong> and <strong>Prolog</strong>, Libraries:
+		<strong>Social Networking Analytics</strong> &amp; <strong>GeoSpatial</strong>,
+		Written in: <strong>Common</strong> <strong>Lisp</strong>, Links: Learning Center
+		<a href="http://www.franz.com/agraph/support/learning/">&raquo;</a>, Videos
+		<a href="http://www.franz.com/agraph/services/conferences_seminars/">&raquo;</a>
+	</article>
+
+	<article><h3><a href="http://www.brightstardb.com/">BrightstarDB</a></h3>
+		A native,<strong> .NET</strong>, semantic web database with code first Entity Framework, <strong>LINQ</strong>
+		and <strong>OData</strong> support. API: <strong>C#</strong>, Protocol: <strong>SPARQL
+			HTTP, C#</strong>, Query Method: <strong>LINQ, SPARQL</strong>, Written in: <strong>C#</strong>
+	</article>
+
+	<article><h3><a href="http://www.systap.com/bigdata.htm">Bigdata</a></h3>
+		API: <strong>Java, Jini service discovery</strong>, Concurrency: <strong>very high
+			(MVCC)</strong>,
+		Written in: <strong>Java</strong>, Misc: GPL + commercial, Data: <strong>RDF data with inference, dynamic
+			key-range sharding of indices</strong>,
+		Misc: Blog <a href="http://www.bigdata.com/blog">&raquo;</a> (parallel database, high-availability architecture,
+		immortal database with historical views)
+	</article>
+
+
+	<article><h3><a href="http://www.meronymy.com/">Meronymy</a></h3>
+		RDF enterprise database management system. It is cross-platform and can be used with most programming languages.
+		Main features: high performance, guarantee database transactions with ACID, secure with ACL's, SPARQL &amp;
+		SPARUL, ODBC &amp; JDBC drivers, RDF &amp; RDFS.
+		<a href="http://en.wikipedia.org/wiki/Meronymy_SPARQL_Database_Server">&raquo;</a>
+	</article>
+	<article><h3><a href="http://www.openlinksw.com/">OpenLink Virtuoso</a></h3>
+		<strong>Hybrid</strong> DBMS covering the following models: <strong>Relational, Document, Graph</strong>
+	</article>
+
+	<article><h3><a href="http://www.dekorte.com/projects/opensource/vertexdb/">VertexDB</a></h3></article>
+
+	<article><h3><a href="http://github.com/twitter/flockdb">FlockDB</a></h3>
+		by twitter <a href="http://gigaom.com/2010/04/12/twitter-open-sources-the-home-of-its-social-graph/">&raquo;</a>
+		<a href="http://github.com/twitter/flockdb">&raquo;</a>
+	</article>
+	<article class="grey">
+		<p>[Java Universal Network / Graph Framework, OpenRDF / Sesame, Filament, OWLim, NetworkX, iGraph, Jena]</p>
+
+		<p>List of SPARQL implementations can be found <a href="http://www.w3.org/wiki/SparqlImplementations">here</a>
+		</p>
+	</article>
+</section>
+
+<section>
+	<h2>Multimodel Databases</h2>
+	<article>
+		<h3><a href="http://www.orientechnologies.com/">OrientDB</a></h3>
+		Languages: <strong>Java</strong>, Schema: <strong>Has features of an Object-Database, DocumentDB, GraphDB or
+		Key-Value DB</strong>, Written in: <strong>Java</strong>, Query Method: <strong>Native and SQL</strong>, Misc:
+		<strong>really fast, lightweight, ACID with recovery</strong>.
+	</article>
+	<article>
+		<h3><a href="http://www.arangodb.org/">ArangoDB</a></h3>
+
+		API: <strong>REST, blueprint, different programming languages like Ruby, Python, Java, PHP,</strong>
+		Data Model: <strong>document oriented &amp; graphs with shapes,</strong> Protocol: <strong>HTTP using
+		JSON</strong>,
+		Query Method: <strong>declarative query language, query by example, map/reduce, key/value,</strong>
+		Replication: <strong>master-master asynchronous, master-master synchronous,</strong> Written in: <strong>C/C++/Javascript
+		(using V8),</strong>
+		Concurrency: <strong>MVCC,</strong> Misc: <strong>"stored procedures" (in Ruby &amp; Javascript),schema-free
+		schematas,</strong>
+		<small>(note: work in progress, this list includes features for V2 available in Autumn 2012),</small>
+	</article>
+	<article>
+		<h3><a href="http://code.google.com/p/alchemydatabase/">AlchemyDB</a></h3>
+		GraphDB + RDBMS + KV Store + Document Store. Alchemy Database is a
+		low-latency high-TPS NewSQL RDBMS embedded in the NOSQL datastore
+		redis. Extensive datastore-side-scripting is provided via deeply
+		embedded Lua.
+	</article>
+</section>
+
+<section>
+	<p>Soft NoSQL Systems</p>
+	<small>[Mostly NOT originalted out of a Web 2.0 need but worth a look for great non relational solutions]</small>
+	<h2>Object Databases <a href="http://odbms.org/">&raquo;</a></h2>
+
+	<article>
+		<h3><a href="http://db4o.com">db4o</a></h3>
+		API: <strong>Java, C#, .Net Langs</strong>, Protocol: <strong>language</strong>, Query Method: <strong>QBE (by
+		Example), Soda, Native Queries, LINQ (.NET)</strong>,
+		Replication: <strong>db4o2db4o &amp; dRS to relationals</strong>, Written in: <strong>Java</strong>,
+		Cuncurrency: <strong>ACID serialized</strong>, Misc: <strong>embedded lib,</strong> <strong>Links</strong>:
+		DZone Refcard #53 <a href="http://refcardz.dzone.com/refcardz/getting-started-db4o">&raquo;</a>,
+		Book <a href="http://www.amazon.com/Definitive-Guide-db4o-Stefan-Edlich/dp/1590596560/">&raquo;</a>,
+	</article>
+
+	<article>
+		<h3>
+			<a href="http://www.versant.com">Versant</a></h3>
+		API:
+		Languages/Protocol:
+		<strong>Java, C#, C++, Python</strong>. Schema: language class model (easy changable). Modes: <strong>always
+		consistent and eventually consistent </strong>
+		Replication: <strong>synchronous fault tolerant and peer to peer asynchronous</strong>. Concurrency: <strong>optimistic
+		and object based locks</strong>. Scaling: <strong>can add physical nodes on fly for scale out/in</strong>
+		<strong>and migrate objects between nodes without impact to application code</strong>. Misc: <strong>MapReduce
+		via parallel SQL like query across logical database groupings.</strong>
+	</article>
+
+	<article>
+		<h3>
+			<a href="http://www.objectivity.com/">Objectivity</a></h3>
+		API:
+		Languages: <strong>Java, C#, C++, Python, Smalltalk, SQL access through ODBC</strong>. Schema: <strong>native
+		language class model, direct support for references, interoperable across all language bindings. 64 bit unique
+		object ID (OID) supports multi exa-byte</strong>. Platforms: <strong>32 and 64 bit Windows, Linux, Mac OSX,
+		*Unix</strong>. Modes: <strong>always consistent (ACID). </strong>Concurrency: <strong>locks at cluster of
+		objects (container) level.</strong> Scaling: <strong>unique distributed architecture, dynamic addition/removal
+		of clients &amp; servers, cloud environment ready. </strong>Replication: <strong>synchronous with quorum fault
+		tolerant across peer to peer partitions.</strong>
+
+		Progress<br>
+
+
+		Gemstone<br>
+	</article>
+
+	<article>
+		<h3>
+			<a href="http://www.starcounter.com/">Starcounter</a></h3>
+		API:
+		API: <strong>C# (.NET languages)</strong>,
+		Schema: <strong>Native language class model</strong>, Query method: <strong>SQL</strong>, Concurrency: <strong>Fully
+		ACID compliant</strong>, Storage: <strong>In-memory with transactions secured on disk</strong>, Reliability:
+		<strong>Full checkpoint recovery</strong>, Misc: <strong>VMDBMS - Integrating the DBMS with the virtual machine
+		for maximal performance and ease of use</strong>.
+	</article>
+
+	<article>
+		<h3>
+			<a href="http://www.mcobject.com/perst">Perst</a></h3>
+		API:
+		API: <strong>Java,Java ME,C#,Mono</strong>. Query method: <strong>OO via Perst collections, QBE, Native Queries,
+		LINQ, native full-text search, JSQL</strong> Replication: <strong>Async+sync (master-slave)</strong> Written in:
+		<strong>Java, C#</strong>. <br>
+		Caching: <strong>Object cache (LRU, weak, strong), page pool, in-memory database</strong> Concurrency: <strong>Pessimistic+optimistic
+		(MVCC)</strong> <strong>+ async or sync (ACID) </strong>Index types: <strong>Many tree models + Time
+		Series</strong>. Misc.Embedded lib., encryption, automatic recovery, native full text search, on-line or
+		off-line backup.
+	</article>
+
+
+	<article>
+		<h3>
+			<a href="http://zodb.org/">ZODB</a></h3>
+		API:
+		<strong>Python</strong>,
+		Protocol:
+		<strong>Internal, ZEO</strong>,
+		Query
+		Method: <strong>Direct object access, zope.catalog, gocept.objectquery,</strong>
+		Replication: <strong>ZEO, ZEORAID, RelStorage</strong>
+		Written in: <strong>Python, C</strong> Concurrency: <strong>MVCC</strong>, License:
+		<strong>Zope Public License (OSI approved)</strong>
+		Misc: Used in production since 1998
+	</article>
+
+	<article>
+		<h3><a href="http://wiki.squeak.org/squeak/2665" rel="tag">Magma</a></h3>
+		Smalltalk DB, optimistic locking, Transactions, etc.
+	</article>
+
+	<article>
+		<h3><a href="http://www.neoppod.org/">NEO</a></h3>
+		API: <strong>Python - ZODB "Storage" interface</strong>, Protocol: <strong>native</strong>, Query Method:
+		<strong>transactional key-value</strong>,
+		Replication: <strong>native</strong>,
+		Written in: <strong>Python</strong>,
+		Concurrency: <strong>MVCC</strong>
+		(internally), License: <strong>GPL "v2 or later"</strong>, Misc: Load balancing, fault tolerant, hot-extensible.
+	</article>
+
+	<article>
+		<h3><a href="http://www.picolisp.com">PicoLisp</a></h3>
+		Language and Object Database, can be viewed as a Database Development
+		Framework. Schema:<strong> native language class model with relations + various indexes</strong>.
+		Queries: <strong>language build in + a small Prolog like DSL Pilog</strong>. Concurrency: <strong>synchronization
+		+ locks</strong>.
+		Replication, distribution and fault tolerance is not implemented per default but can be implemented with native
+		functionality. Written in C (32bit) or assembly (64bit).
+	</article>
+	<article>
+		<h3><a href="http://siaqodb.com/">siaqodb</a></h3>
+		An object database engine that currently runs on <strong>.NET, Mono, Silverlight,Windows
+		Phone 7, MonoTouch, MonoAndroid, CompactFramework</strong>; It has
+		implemented a Sync Framework Provider and can be <strong>synchronized</strong> with<strong> MS
+		SQLServer</strong>; Query
+		method:<strong>LINQ</strong>;
+	</article>
+	<article>
+		<h3><a href="http://sterling.codeplex.com/">Sterling</a></h3>
+		is a lightweight object-oriented database for .NET with support for
+		Silverlight and Windows Phone 7. It features in-memory keys and
+		indexes, triggers, and support for compressing and encrypting the
+		underlying data.
+	</article>
+	<article>
+		<h3><a href="http://www.morantex.com/">Morantex</a></h3>
+		Stores .NET classes in a datapool. Build for speed. SQL Server
+		integration. LINQ support.
+	</article>
+	<article>
+		<h3><a href="http://www.eyedb.org/">EyeDB</a></h3>
+		EyeDB is an<strong> LGPL OODBMS</strong>,
+		provides an advanced object model (inheritance, collections, arrays,
+		methods, triggers, constraints, reflexivity), an object definition
+		language based on ODMG ODL, an object query and manipulation language
+		based on ODMG OQL. Programming interfaces for C++ and Java.
+	</article>
+
+	<article>
+		<h3><a href="http://highspeed-solutions.net/db.aspx">HSS Database</a></h3>
+		Written in: <strong>100% C#</strong>,
+		Platform: <strong>.NET 4, SL4 and WP7/WP7.1</strong>, Single DLL API, Small licensing fee
+		for support, 90 Day Trial Available, ~100KB footprint.
+	</article>
+	<article>
+		<h3><a href="http://www.framerd.org/">FramerD</a></h3>
+		Object-Oriented Database designed to support the maintenance and
+		sharing of knowledge bases. Optimized for pointer-intensive data
+		structures used by semantic networks, frame systems, and many
+		intelligent agent applications. Written in: <strong>ANSI C</strong>.
+	</article>
+
+	<article>
+		<span class="grey">[StupidDB <a href="http://www.aztec-project.org/">&raquo;</a>,
+		KiokuDB <a href="http://www.iinteractive.com/kiokudb/">&raquo;</a>
+		(Perl solution), Durus <a href="http://www.mems-exchange.org/software/durus/">&raquo;</a>,</span>
+	</article>
+</section>
+
+
+<section>
+	<h2>Grid &amp; Cloud Database Solutions</h2>
+	<article>
+		<h3><a href="http://www.gigaspaces.com/">GigaSpaces</a></h3>
+		Popular SpaceBased Grid Solution.
+	</article>
+	<article>
+		<h3><a href="http://www.jboss.org/infinispan.html">Infinispan</a></h3>
+		scalable, highly available data grid platform,<strong> open source</strong>,
+		written in <strong>Java</strong>.
+	</article>
+	<article>
+		<h3><a href="http://www.queplix.com">Queplix</a></h3>
+		NOSQL Data Integration Environment, can integrate relational, object, BigData &ndash; NOSQL easily and without
+		any SQL.
+	</article>
+	<article>
+		<h3><a href="http://www.hazelcast.com/">Hazelcast</a></h3>
+		P2P Data Grid Solution on java.util.*, On a 100 Noce EC2 Cluster <a
+			href="http://joafip.sourceforge.net/">&raquo;</a>
+	</article>
+	<article>
+		[<a href="http://joafip.sourceforge.net/">Joafip</a>, <a href="http://www.gridgain.com/">GridGain</a>,
+		Coherence, eXtremeScale]
+	</article>
+</section>
+
+<section>
+	<h2>XML Databases</h2>
+</section>
+
+
+<article>
+	<h3><a href="http://www.marklogic.com/">Mark Logic Server</a></h3>
+	(commercial system) API: Java, .NET
+	Protocols: HTTP,
+	REST Query Method: XQuery,
+	XSLT Written in: C++ (code closed,
+	API open) Concurrency: Share-nothing
+	cluster architecture
+	Misc: Petabyte-scalable XML server. Cloudable. Combines application
+	server, transactional persistent storage (XML, text, and binary), and a
+	full-text search engine. Developer Network <a href="http://xqzone.marklogic.com/">&raquo;</a>
+</article>
+
+
+<article>
+	<h3><a href="http://www.emc.com/products/detail/software/documentum-xdb.htm">EMC Documentum xDB</a></h3>
+	(commercial system) API: Java, XQuery,
+	Protocol: WebDAV, web
+	services, Query method: XQuery, XPath, XPointer,
+	Replication: lazy
+	primary copy replication (master/replicas), Written in: Java,
+	Concurrency: concurrent reads, writes with
+	lock; transaction isolation,
+	Misc: Fully transactional persistent DOM; versioning; multiple index
+	types; metadata and non-XML data support; unlimited horizontal scaling.
+	Developer Network <a href="http://developer.emc.com/xmltech">&raquo;</a>
+</article>
+
+<article>
+	<h3><a href="http://exist-db.org/">eXist</a></h3>
+	API: XQuery, XML:DB API,
+	DOM, SAX, Protocols: HTTP/REST,
+	WebDAV, SOAP, XML-RPC, Atom, Query Method: XQuery, Written in: Java
+	(open source),
+	Concurrency: Concurrent
+	reads, lock on write;
+	Misc: Entire web applications can be written in XQuery, using XSLT,
+	XHTML, CSS, and Javascript (for AJAX functionality). (1.4)
+	adds a
+	new full text search index based on Apache Lucene, a lightweight URL
+	rewriting and MVC framework, and support for XProc.
+</article>
+<article>
+	<h3><a href="http://modis.ispras.ru/sedna/">Sedna</a></h3>
+	Misc: ACID transactions, security, indices, hot backup. Flexible XML
+	processing facilities include W3C XQuery implementation, tight
+	integration of XQuery with full-text search facilities and a node-level
+	update language.
+</article>
+
+<article>
+	<h3><a href="http://basex.org/">BaseX</a></h3>
+	BaseX is a fast, powerful, lightweight XML database system
+	and
+	XPath/XQuery processor with highly conformant support for the latest
+	W3C Update and Full Text Recommendations. Client/Server architecture,
+	ACID transaction support, user management, logging, Open Source,
+	BSD-license, written in Java, runs out of the box.
+</article>
+
+<article>
+	<h3><a href="http://www.xmlmind.com/qizx/">Qizx</a></h3>
+	commercial and open source version, API: Java, Protocols:
+	HTTP, REST, Query
+	Method: XQuery, XQuery
+	Full-Text, XQuery Update, Written in: Java, full source can be
+	purchased,
+	Concurrency: Concurrent
+	reads &amp; writes, isolation, Misc: Terabyte scalable, emphasizes
+	query speed.
+</article>
+<article>
+	<h3><a href="http://www.oracle.com/database/berkeley-db/xml/index.html">Berkeley DB XML</a></h3>
+	API: Many languages,
+	Written in: C++,
+	Query Method: XQuery,
+	Replication: Master /
+	Slave, Concurrency: MVCC,
+	License: Sleepycat <br>
+</article>
+
+<article>
+	<a href="http://xml.apache.org/xindice/">[Xindice</a>
+	<a href="http://www.softwareag.com/de/products/wm/tamino/">Tamino</a>
+	]
+</article>
+<section>
+	<h2>Multidimensional Databases</h2>
+	<article>
+		<h3><a href="http://globalsdb.org/">Globals:</a></h3>
+		by Intersystems, multidimensional
+		array.Node.js
+		API, array based APIs (Java / .NET), and a Java based document API.
+	</article>
+
+
+	<article>
+		<h3><a href="http://www.intersystems.com/">Intersystems Cache</a></h3>
+		Postrelational
+		System. Multidimensional array APIs, Object APIs, Relational Support
+		(Fully SQL capable JDBC, ODBC, etc.) and Document APIs are new
+		in
+		the upcoming 2012.2.x versions. Availible for
+		Windows, Linux and OpenVMS.
+	</article>
+
+</section>
+
+<section>
+	<h2>Multivalue Database</h2>
+	<article>
+		<h3><a href="http://www.rocketsoftware.com/u2">U2</a></h3>
+		(UniVerse, UniData): MultiValue
+		Databases, Data Structure: MultiValued, Supports nested
+		entities, Virtual Metadata, API: BASIC, InterCall,
+		Socket, .NET and Java API's, IDE: Native, Record Oriented,
+		Scalability: automatic
+		table space allocation, Protocol: Client Server, SOA,
+		Terminal Line, X-OFF/X-ON, Written in: C, Query Method: Native
+		mvQuery, (Retrieve/UniQuery) and SQL,
+		Replication: yes, Hot
+		standby, Concurrency: Record
+		and File Locking (Fine and Coarse Granularity)
+	</article>
+
+	<article>
+		<h3><a href="http://www.revsoft.co.uk/openinsight.aspx">OpenInsight</a></h3>
+		API: Basic+,
+		.Net, COM, Socket, ODBC, Protocol: TCP/IP, Named Pipes, Telnet,
+		VT100. HTTP/S Query Method: RList, SQL &amp; XPath Written in:
+		Native 4GL, C, C++, Basic+, .Net,
+		Java Replication: Hot Standby
+		Concurrency: table &amp;/or row locking, optionally transaction based &amp; commit
+		&amp; rollback Data structure: Relational &amp;/or
+		MultiValue, supports nested entities Scalability: rows and tables size dynamically
+	</article>
+
+	<article>
+		<h3><a href="http://www.northgate-reality.com/">Reality</a></h3>
+		(Northgate IS):
+		The original MultiValue data set database, virtual machine, enquiry and
+		rapid development environment. Delivers ultra efficiency, scalability
+		and resilience while extended for the web and with built-in auto
+		sizing, failsafe and more. Interoperability includes Web Services, Java
+		Classes, XML,
+		ActiveX, Sockets, C and, for those that have to
+		interoperate with the SQL
+		world, ODBC/JDBC
+		and two-way transparent SQL data access.
+	</article>
+
+	<article>
+		<h3><a href="http://www.openqm.com/">OpenQM</a></h3>
+		Supports nested data. Fully automated table space allocation. Concurrency
+		control via task locks, file locks &amp; shareable/exclusive record
+		locks. Case insensitivity option. Secondary key indices. Integrated
+		data replication. QMBasic programming language for rapid development.
+		OO programming integrated into QMBasic. QMClient connectivity from
+		Visual Basic, PowerBasic, Delphi, PureBasic, ASP, PHP, C and more.
+		Extended multivalue query language.
+	</article>
+
+	<article>
+		<h3><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/gg269259%28v=EXCHG.10%29.aspx">ESENT</a>
+		</h3>
+		(by Microsoft) ISAM storage technology. Access using index or
+		cursor navigation. Denormalized schemas, wide tables with sparse
+		columns, multi-valued columns, and sparse and rich indexes. C# and
+		Delphi drivers available. Backend for a number of MS Products as
+		Exchange.
+	</article>
+	<article>
+		<h3><a href="http://www.jbase.com/index.html">jBASE</a></h3>
+		more info <a href="http://en.wikipedia.org/wiki/InfinityDB">&raquo;</a>
+	</article>
+</section>
+
+<section>
+	<h2>other NoSQL related databases</h2>
+	<article><h3><a href="http://www-01.ibm.com/software/lotus/">IBM Lotus/Domino</a></h3>
+		Type: Document Store, API: Java, HTTP, IIOP, C API, REST Web Services, DXL, Languages: Java, JavaScript, LotusScript, C, @Formulas, Protocol: HTTP, NRPC, Replication: Master/Master, Written in: C, Concurrency: Eventually
+		Consistent, Scaling: Replication
+		Clusters</article>
+
+
+	<article><h3><a href="http://www.mcobject.com/extremedbfamily.shtml">eXtremeDB</a></h3>
+		Type: In-Memory
+		Database; Written in: C;
+		API: C/C++, SQL, JNI,
+		C#(.NET), JDBC;
+		Replication: Async+sync
+		(master-slave), Cluster; Scalability: 64-bit and MVCC</article>
+
+
+	<article><h3><a href="http://www.raima.com/products/rdme/">RDM Embedded</a></h3>
+		APIs: C++, Navigational C.
+		Embedded Solution that is ACID Compliant with Multi-Core, On-Disk
+		&amp;
+		In-Memory Support. Distributed Capabilities, Hot Online Backup,
+		supports all Main Platforms. Supported
+		B Tree &amp; Hash Indexing. Replication: Master/Slave,
+		Concurrency: MVCC.
+		Client/Server: In-process/Built-in.</article>
+	<article><h3><a href="http://www.unesco.org/webworld/isis/isis.htm">ISIS Family</a></h3>
+		(semistructured databases) <a href="http://bvsmodelo.bvsalud.org/php/level.php?lang=en&amp;component=31">&raquo;</a></article>
+	<article><h3><a href="http://www.prevayler.org/">Prevayler</a></h3>
+		Java RAM Data structure
+		journalling. </article>
+	<article><h3><a href="http://yserial.sourceforge.net/">Yserial</a></h3>
+		Python wrapper over sqlite3</article>
+</section>
+
+<section>
+	<h2>unresolved and uncategorized</h2>
+	<article>
+		<h3><a href="http://www.vmware.com/products/vfabric-gemfire/overview.html">VMware vFabric GemFire</a></h3>
+		(coming soon!)
+	</article>
+</section>
+
+
+<strong>Btrieve</strong>:
+(by Pervasive Software) key/index/tupel DB. Using Pages. <a href="http://www.wordiq.com/definition/Btrieve"
+		>&raquo;</a> (faq <a
+		href="http://www.rothgeb.net/wordpress-2.7.1/?page_id=64">&raquo;</a>)<br>
+
+<a href="https://rubygems.org/gems/KirbyBase">KirbyBase</a>: Written in: <strong>Ruby</strong>. github: <a
+		href="https://github.com/gurugeek/KirbyBase"
+		>&raquo;</a><br>
+
+
+<a href="http://tokutek.com/">Tokutek:</a>
+<br>
+
+
+<a href="http://www.gnu.org/software/recutils/">Recutils:</a>
+GNU Tool for text files containing records and fields. Manual <a
+		href="http://www.gnu.org/software/recutils/manual/index.html">&raquo;</a><br>
+
+
+<a href="http://www.eztools-software.com/tools/filedb/">FileDB:</a>
+Mainly targeted to Silverlight/Windows Phone developers but its also
+great for any .NET application where a simple local database is
+required, extremely Lightweight - less than 50K, stores one table per
+file, including index, compiled versions for Windows Phone 7,
+Silverlight and .NET, fast, free to use in your applications<br>
+
+<strong>illuminate Correlation Database</strong>
+<a href="http://www.datainnovationsgroup.com/">&raquo;</a>, <strong>FluidDB (Column Oriented DB)</strong>
+<a href="http://doc.fluidinfo.com/fluidDB/">&raquo;</a>,Fleet DB <a href="http://fleetdb.org/">&raquo;</a>,
+<strong>Btrieve</strong>
+, <br>
+
+Twisted Storage <a href="http://twistedstorage.com/">&raquo;</a>, Ringo, Sherpa, tin, Dryad, SkyNet, Disco
+
+<br>
+Possibly the oldest NoSQL DB: <a
+		href="http://documentation.softwareag.com/adabas/ada814mfr/adamf/concepts/cfadais.htm">&raquo;
+	<strong>Adabas</strong></a>
+</div>
+<aside id="sidebar">
+<a href="http://www.nosql-matters.org/"><img alt="NoSQL Matters" src="Resources/Public/Img/nosql-matters.gif"/></a>
+
+<h3>EVENTS</h3>
+
+<ul>
+	<li>
+		21-23 Aug NoSQL Now! San Jose <a href="http://nosql2012.dataversity.net/">&raquo;</a>
+	</li>
+	<li>
+		29+30 May <strong>NoSQL matters</strong> Cologne <a href="http://www.nosql-matters.org/">&raquo;</a>
+	</li>
+	<li>
+		22th May <strong>GOTO</strong> CPH <a href="http://gotocon.com/cph-2012/">&raquo;</a>
+	</li>
+	<li>9-11 May SkillsMatter Tutorials <a
+			href="http://skillsmatter.com/event/nosql/progressive-nosql-tutorials/ac-4146"
+			>&raquo;</a>
+	</li>
+	<li>Mongo all around the world <a href="http://www.10gen.com/events">&raquo;</a></li>
+	<li>20th Apr NoSQL <strong>RoadShow Z&uuml;rich</strong> <a href="http://nosqlroadshow.com/">&raquo;</a></li>
+</ul>
+<p>
+	All past NoSQL Conferences <a href="past-confs.html">&raquo;</a>
+	<br/>
+	register your event here! <a href="feedback.html">&raquo;</a>
+</p>
+<strong><span class="grey">NoSQL Summer in 27
+                                                                                                cities</span>
+</strong><a href="http://nosqlsummer.org/">&raquo;</a>
+
+<br>
+
+<strong>Conceptual quality articles, blogs, links, research papers, etc. </strong>
+
+<br>
+
+<h3>NoSQL ARCHIVE</h3>
+<a href="links.html">
+	<img alt="NoSQL ARCHIVE" title="NoSQL ARCHIVE" src="Resources/Public/Img/archive.jpg"/>
+</a>
+
+<h3>NoSQL User Stories <a href="user-stories.html">&raquo;</a></h3>
+
+Announcing the availability of <br> the <strong>worlds first NoSQL Book</strong>!<strong> <a
+		href="1stBook.html">&raquo;</a></strong>
+
+<br>
+
+
+<a href="http://gotocon.com/cph-2012/"><img alt="GOTO Copenhagen" src="Resources/Public/Img/GOTO_copenhagen_logo.png"/></a>
+
+<br>
+
+
+<h3>NoSQL FORUMS [3]</h3>
+<ul>
+	<li>Global NOSQL Forum <a href="http://groups.google.de/group/nosql-discussion">&raquo;</a></li>
+	<li>Forum Berlin <a href="http://groups.google.de/group/nosql-berlin/topics">&raquo;</a></li>
+	<li>Forum France <a href="http://groups.google.fr/group/nosql-fr">&raquo;</a></li>
+	<li>Forum Japan <a href="http://groups.google.com/group/nosql-ja">&raquo;</a></li>
+</ul>
+
+<h3>GREAT NoSQL NEWS FEEDS</h3>
+<ul>
+	<li>
+		MyNoSQL by Alex P <a href="http://nosql.mypopescu.com/">&raquo;</a><br/>[He is definetely bigger...]
+	</li>
+	<li><strong>NoSQLPedia</strong>
+		<a href="http://nosqlpedia.com/wiki/Main_Page">&raquo;</a>
+	</li>
+	<li>Survey DBs
+		<a href="http://nosqlpedia.com/wiki/Survey_distributed_databases">
+			&raquo;
+		</a>
+	</li>
+	<li>On Twitter: nosqlupdate <a
+			href="http://twitter.com/nosqlupdate">&raquo;</a>
+	</li>
+	<li>NoSQL Weekly <a href="http://www.nosqlweekly.com/">&raquo;</a> <strong>* new *</strong></li>
+	<li>HighScalability Blog <a href="http://highscalability.com/">&raquo;</a></li>
+</ul>
+
+<h3>NoSQL NEWS</h3>
+<ul>
+	<li>MongoDB and Neo4j got new funding!</li>
+	<li>CouchDB &amp; Membase merge to CouchBase ! <a
+			href="http://www.couchbase.com/?utm_source=NoSQL+Weekly+List&amp;utm_campaign=c140bfdd36-NoSQL_Weekly_Issue_11_February_10_2011">&raquo;</a>
+	</li>
+	<li>Basho raises $7.5M from Trifork <a
+			href="http://www.masshightech.com/stories/2011/02/07/daily18-Basho-raises-75M-to-expand-NoSQL-database-sales.html"
+			>&raquo;</a></li>
+	<li>More <a href="http://nosqltapes.com/"><strong>NoSQL Tapes</strong></a>
+		out!
+	</li>
+</ul>
+
+<h3>CONCEPTS / MISC</h3>
+<ul>
+	<li>Map/Reduce Go <a href="http://labs.google.com/papers/mapreduce.html">&raquo;</a> WP <a
+			href="http://en.wikipedia.org/wiki/Mapreduce">&raquo;</a></li>
+	<li>Plasma MR impl <a href="http://projects.camlcity.org/projects/plasma.html">&raquo;</a></li>
+	<li>Google BigTable <a href="http://en.wikipedia.org/wiki/Bigtable">&raquo;</a></li>
+</ul>
+<h3>FUN</h3>
+<ul>
+	<li>
+		The <a href="http://tatiyants.com/?p=1261"><strong>MoreSQL</strong></a> movement
+	</li>
+	<li>Why NoSQL is <strong>bad</strong> for startups <a
+			href="http://labs.mudynamics.com/2010/04/01/why-nosql-is-bad-for-startups/">&raquo;</a></li>
+	<li>Tweet found by Damien Katz <a href="http://browsertoolkit.com/fault-tolerance.png">&raquo;</a></li>
+	<li>NoSQL East vs Oracle World <a
+			href="http://www.cscyphers.com/blog/2009/10/30/nosql-east-vs-oracle-openworld/">&raquo;</a></li>
+	<li>NoSQL Trolls <a href="http://www.snailinaturtleneck.com/blog/?p=174">&raquo;</a></li>
+</ul>
+
+<p>"A DBA walks into a NOSQL bar, but turns and leaves because he couldn't find a <strong>table</strong>" (webtonull)
+</p>
+
+<h3>NewSQL Databases</h3>
+
+<p>scalable and ACID and (relational and/or sql -access)</p>
+<ul>
+	<li>
+		VoltDB
+	</li>
+
+
+	<li>
+		NuoDB
+	</li>
+
+
+	<li>
+		Citrusleaf
+	</li>
+
+
+	<li>
+		SenseiDB
+	</li>
+
+
+	<li>
+		Datomic
+	</li>
+
+
+	<li>
+		GenieDB
+	</li>
+
+
+	<li>
+		RethinkDB
+	</li>
+
+
+	<li>
+		ScalArc
+	</li>
+
+
+	<li>
+		ScaleDB
+	</li>
+
+
+	<li>
+		Drizzle
+	</li>
+
+
+	<li>
+		ScaleBase
+	</li>
+
+
+	<li>
+		Akiban
+	</li>
+
+
+	<li>
+		Translattice
+	</li>
+
+
+	<li>
+		NimbusDB
+	</li>
+
+
+	<li>
+		NDB MySQL Cluster
+	</li>
+
+
+	<li>
+		HandlerSocket (Percona)
+	</li>
+
+
+	<li>
+		Tokutek
+	</li>
+
+
+	<li>
+		JustOneDB
+	</li>
+
+
+	<li>
+		Wakanda DB
+	</li>
+	<li>
+		Memsql (new)
+	</li>
+</ul>
+<h4>Hosted NewSQL</h4>
+Database.com, Amazon RDS, MS SQL Azure, Xeround, FathomDB
+</aside>
+<footer>
+	<p>[This "NoSQL Archive" has always <strong>&gt; 40.000 unique visitors</strong> per month, it is <strong>top
+		rated</strong> on Google for "nosql", and is the <strong>#1</strong>
+		source for NoSQL <strong>system</strong>.]</p>
+
+	<p><a href="feedback.html">&raquo; Contact &amp; Feedback </a> <a href="impressum.html">&raquo; Impressum</a></p>
+</footer>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+	var sc_project = 5229882;
+	var sc_invisible = 1;
+	var sc_partition = 59;
+	var sc_click_stat = 1;
+	var sc_security = "f871774f"; </script>
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript>
+	<div class="statcounter"><a title="blogspot statistics" href="http://www.statcounter.com/blogger/"><img
+			class="statcounter" src="http://c.statcounter.com/5229882/0/f871774f/1/" alt=""></a></div>
+</noscript>
+
+<!-- End of StatCounter Code -->
+
+</div>
+</body>
+</html>
