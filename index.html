@@ -214,8 +214,8 @@
             <h3><a href="http://riak.basho.com/">Riak</a></h3>
             API: <strong>JSON</strong>,
             Protocol: <strong>REST</strong>,
-            Query Method: <strong>MapReduce term matching</strong> , Scaling: <span style="font-weight: bold;">Multiple     Masters</span>; Written in: <strong>Erlang</strong>,
-            Concurrency: <span style="font-weight: bold;">eventually     consistent</span> (stronger then MVCC via Vector Clocks), Misc<strong>:</strong> ... <span style="font-weight: bold;">Links</span>: talk <a href="http://riak.basho.com/nyc-nosql/"                                                     >&raquo;</a>,<br>
+            Query Method: <strong>MapReduce term matching</strong> , Scaling: <strong>Multiple     Masters</strong>; Written in: <strong>Erlang</strong>,
+            Concurrency: <strong>eventually     consistent</span> (stronger then MVCC via Vector Clocks), Misc<strong>:</strong> ... <span style="font-weight: bold;">Links</strong>: talk <a href="http://riak.basho.com/nyc-nosql/"                                                     >&raquo;</a>,<br>
         </article>
         <article>
             <h3><a href="http://redis.io">Redis</a></h3>
@@ -225,7 +225,7 @@
             Concurrency: <strong>in memory</strong>
             and saves asynchronous disk after a defined time. Append only mode
             available. Different kinds of fsync policies. Replication: <strong>Master / Slave</strong>,
-            Misc: <span style="font-weight: bold;">also lists, sets, sorted sets, hashes, queues</span>. Cheat-Sheet: <a href="http://masonoise.files.wordpress.com/2010/03/redis-cheatsheet-v1.pdf">&raquo;</a>, great     slides <a href="http://simonwillison.net/static/2010/redis-tutorial/">&raquo;</a>  Admin UI <a
+            Misc: <strong>also lists, sets, sorted sets, hashes, queues</strong>. Cheat-Sheet: <a href="http://masonoise.files.wordpress.com/2010/03/redis-cheatsheet-v1.pdf">&raquo;</a>, great     slides <a href="http://simonwillison.net/static/2010/redis-tutorial/">&raquo;</a>  Admin UI <a
                 href="http://www.servicestack.net/mythz_blog/?p=381">&raquo;</a> From the Ground up <a
                 href="Redis%20:%20%20API:%20Tons%20of%20languages,%20Written%20in:%20C,%20Concurrency:%20in%20memory%20and%20saves%20asynchronous%20disk%20after%20a%20defined%20time.%20Append%20only%20mode%20available.%20Different%20kinds%20of%20fsync%20policies.%20Replication:%20Master%20/%20Slave,%20Misc:%20also%20lists,%20sets,%20sorted%20sets,%20hashes.%20Cheat-Sheet:+%BB,+good+slides+%BB++Admin+UI+%BB"
                 >&raquo;</a>
@@ -245,7 +245,7 @@
         <article>
             <h3><a href="http://sourceforge.net/projects/chordless/">Chordless</a></h3>
             API:
-            <span style="font-weight: bold;">Java &amp; simple RPC to vals</span>, Protocol: <strong>internal</strong>, Query Method: <span style="font-weight: bold;">M/R inside value objects</span>, Scaling: <span style="font-weight: bold;">every node is master for its slice of namespace</span>, Written in: <strong>Java</strong>, Concurrency: <span style="font-weight: bold;">serializable transaction isolation</span>,
+            <strong>Java &amp; simple RPC to vals</span>, Protocol: <strong>internal</strong>, Query Method: <span style="font-weight: bold;">M/R inside value objects</span>, Scaling: <span style="font-weight: bold;">every node is master for its slice of namespace</span>, Written in: <strong>Java</strong>, Concurrency: <span style="font-weight: bold;">serializable transaction isolation</strong>,
         </article>
 
         <article>
@@ -807,57 +807,28 @@ implementations can be found <a href="http://www.w3.org/wiki/SparqlImplementatio
 
 <section>
     <h2>Multimodel Databases</h2>
+    <article>
+        <h3><a href="http://www.orientechnologies.com/">OrientDB</a></h3>
+        Languages: <strong>Java</strong>, Schema: <strong>Has features of an Object-Database, DocumentDB, GraphDB or Key-Value DB</span>,  Written in: <strong>Java</strong>, Query Method: <span style="font-weight: bold;">Native and SQL</span>, Misc: <span style="font-weight: bold;">really fast, lightweight, ACID with recovery</strong>.
+    </article>
+    <article>
+        <h3><a href="http://www.arangodb.org/">ArangoDB</a></h3>
+
+        API: <strong>REST, blueprint, different programming languages like Ruby, Python, Java, PHP,</strong>
+        Data Model: <strong>document oriented &amp; graphs with shapes,</strong> Protocol: <strong>HTTP using JSON</strong>,
+        Query Method: <strong>declarative query language, query by example, map/reduce, key/value,</strong>
+        Replication: <strong>master-master asynchronous, master-master synchronous,</strong> Written in: <strong>C/C++/Javascript (using V8),</strong>
+        Concurrency: <strong>MVCC,</strong> Misc: <strong>"stored procedures" (in Ruby &amp; Javascript),schema-free schematas,</strong>
+        <small>(note: work in progress, this list includes features for V2 available in Autumn 2012),</small>
+    </article>
+    <article>
+        <h3><a href="http://code.google.com/p/alchemydatabase/">AlchemyDB</a></h3>
+        GraphDB + RDBMS + KV Store + Document Store. Alchemy Database is a
+        low-latency high-TPS NewSQL RDBMS embedded in the NOSQL datastore
+        redis. Extensive datastore-side-scripting is provided via deeply
+        embedded Lua.
+    </article>
 </section>
-
-
-   <a href="http://www.orientechnologies.com/">OrientDB</a>:
-        Languages: <strong>Java</strong>,
-        Schema: <span style="font-weight: bold;">Has features of
-an Object-Database, DocumentDB, GraphDB or Key-Value DB</span>,
-        Written in: <strong>Java</strong>,
-        Query Method: <span style="font-weight: bold;">Native and
-SQL</span>, Misc: <span style="font-weight: bold;">really
-fast, lightweight, ACID with recovery</span>.<br>
-
-
-        <br>
-
-
-       <h3><a href="http://www.arangodb.org/">ArangoDB</a></h3>
-
-API: <span style="font-weight: bold;">REST, blueprint,
-different programming languages like Ruby, Python, Java, PHP,</span>
-        Data Model: <span style="font-weight: bold;">document
-oriented &amp; graphs with shapes,</span> Protocol: <strong>HTTP using JSON</strong>,
-        Query Method: <span style="font-weight: bold;">declarative
-query language, query by example, map/reduce, key/value,</span>
-        Replication: <span style="font-weight: bold;">master-master
-asynchronous, master-master synchronous,</span> Written in: <strong>C/C++/Javascript (using V8),</strong>
-        Concurrency: <strong>MVCC,</strong>
-        Misc: <strong>"stored
-procedures" (in Ruby &amp; Javascript),schema-free schematas,</strong>
-    <span class="Apple-style-span"
-                              style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
-            class="Apple-style-span" style="border-collapse: collapse; font-family: arial,sans-serif; font-size: 13px;">(note:
-        work in progress, this list includes features for V2 available in
-        Autumn 2012),</span></span><br>
-
-
-
-      <span class="Apple-style-span"
-            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
-              class="Apple-style-span"
-              style="border-collapse: collapse; font-family: arial,sans-serif; font-size: 13px;">
-          <br>
-
-
-          <a href="http://code.google.com/p/alchemydatabase/"><span
-                  style="font-weight: bold; color: rgb(0, 0, 153);">AlchemyDB</span></a>:
-          GraphDB + RDBMS + KV Store + Document Store. Alchemy Database is a
-          low-latency high-TPS NewSQL RDBMS embedded in the NOSQL datastore
-          redis. Extensive datastore-side-scripting is provided via deeply
-          embedded Lua.</span></span>
-
 
 <section>
     <p>Soft NoSQL Systems</p>
