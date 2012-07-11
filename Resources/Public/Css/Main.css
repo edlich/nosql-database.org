@@ -20,10 +20,10 @@ body {
 }
 
 a:link {
-  color: red;
+  color: #b90609;
 }
 a:visited {
-  color: red;
+  color: #b90609;
 }
 
 article {
@@ -41,6 +41,9 @@ aside {
 }
 aside h3 {
   display: block;
+}
+aside h3 a {
+  color: #b90609;
 }
 
 dl dt {

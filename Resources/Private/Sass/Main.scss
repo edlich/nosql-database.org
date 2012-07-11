@@ -1,6 +1,6 @@
 @import "compass";
 
-$red: #ff0000;
+$red: #b90609;
 $grey: #666;
 $headerGrey: #ccc;
 $headerBlue: #CCE6E6;
@@ -8,7 +8,6 @@ $blue: #009;
 $width: 990px;
 $sidebar: 254px;
 $bottomMargin: 10px;
-$redStar: #b90609;
 
 $base-line-height: 22px;
 @include establish-baseline;
@@ -48,6 +47,9 @@ aside {
   padding-left: 14px;
   h3 {
     display: block;
+    a {
+      @include link-colors($red);
+    }
   }
 }
 
@@ -132,7 +134,7 @@ header {
 }
 
 .red {
-  color: $redStar;
+  color: $red;
 }
 
 #main {

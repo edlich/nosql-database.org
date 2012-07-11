@@ -4,7 +4,9 @@ Repository for http://nosql-database.org
 
 Currently all stuff is done statically and the markup has to be "optimized".
 
-## Running the site
+Revamped the table layout to a CSS based layout with html5 markup.
+
+## Modifying the site's styles
 
 In newer revisions the CSS generation is done by compass.
 
@@ -17,8 +19,4 @@ the CSS is generated dynamically.
 
 ## Todo
 
-* Cleanup markup
-* Extract inline styles to external CSS
 * Migrate to Jekyll
-
-
