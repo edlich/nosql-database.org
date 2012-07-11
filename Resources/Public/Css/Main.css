@@ -1,3 +1,12 @@
+* html {
+  font-size: 100%;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.375em;
+}
+
 html {
   margin: 0;
   border: 0;
@@ -19,6 +28,10 @@ a:visited {
 
 article {
   margin-bottom: 10px;
+}
+article h1 {
+  border-bottom: 0;
+  text-transform: none;
 }
 
 aside {
@@ -57,6 +70,7 @@ footer {
 h1 {
   border-bottom: 2px solid #666666;
   text-transform: uppercase;
+  padding-bottom: 8px;
 }
 
 h2 {
@@ -88,6 +102,7 @@ header {
   float: left;
   width: 990px;
   margin-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .third {
@@ -99,6 +114,10 @@ header {
   color: #666666;
   font-weight: normal;
   text-transform: none;
+}
+
+.red {
+  color: #b90609;
 }
 
 #main {
