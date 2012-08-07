@@ -1,6 +1,6 @@
 # NoSQL Database
 
-Repository for http://nosql-database.org
+Repository for the #1 NoSQL Product list http://nosql-database.org
 
 Currently all stuff is done statically and the markup has to be "optimized".
 
