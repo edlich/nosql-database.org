@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>The DB jungle guide - NOSQL Databases</title>
+	<meta name="author" content="Prof. Dr.Stefan Edlich">
+	<meta name="publisher" content="Prof. Dr.Stefan Edlich">
+	<meta name="description"
+	      content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books and much more...">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/x-icon" href="/Resources/Public/Img/favicon.ico">
+	<link href="Resources/Public/Css/Main.css" rel="stylesheet">
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-1535339-3");
+			pageTracker._trackPageview();
+		} catch (err) {
+		}</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<header>
+		<div class="third">
+			<a href="index.html"><img width="251" height="61" alt="NoSQL Logo" src="Resources/Public/Img/nosql-logo.gif"></a>
+		</div>
+		<div class="third">
+			Your Ultimate Guide to the <br/>
+			Non - Relational Universe!<br/>
+		</div>
+		<div class="third">
+			[the <strong>best selected</strong> nosql link <a href="links.html">Archive</a> in the web]<br/>
+			<small>...never miss a <i>conceptual</i>
+				article again...<br>
+				<strong>News Feed </strong>covering all changes
+			</small>
+			<small><a href="http://nosql-databases.blogspot.com/">here</a></small>
+			<small>
+				<strong>!</strong>
+			</small>
+		</div>
+	</header>
+
+	<div id="main">
+
+
+		<h1>The DB jungle guide: &quot;How to select the right database&quot;</h1>
+		This list is compiled from 2 years of NoSQL consulting and has been presented on many conferences (video <a href="http://www.infoq.com/presentations/Choosing-NoSQL-NewSQL">here</a>),
+		articles (e.g. here) and in the worlds first NoSQL Books (in german).
+
+		<h2>Class 1: Know &amp; Segment your data</h2>
+
+		<h3>Analyze &amp; Categorize it:</h3>
+		<ul>
+			<li>Domain-Data</li>
+			<li>Log-Data</li>
+			<li>Event-Data</li>
+			<li>Message-Data</li>
+			<li>critical Data</li>
+			<li>Business-Data</li>
+			<li>Meta-Data</li>
+			<li>temp Data</li>
+			<li>Session-Data</li>
+			<li>Geo Data</li>
+			<li>etc.</li>
+		</ul>
+
+		<h3>Data- / Storage Model:</h3>
+		<ul>
+			<li>relational</li>
+			<li>column-o</li>
+			<li>doc-alike</li>
+			<li>graphs</li>
+			<li>objects</li>
+			<li>multivalue</li>
+			<li>objects=ORM</li>
+			<li>JSON</li>
+			<li>BLOBS</li>
+			<li>etc. (beyond bit-bucket)</li>
+		</ul>
+
+		<h3>Data / Type constraints:</h3>
+		<ul>
+			<li>Data-Navigation?</li>
+			<li>Data Amount?</li>
+			<li>Data Komplexity (Deep XML?)</li>
+			<li>Schema flexibility?</li>
+			<li>Schema support needed?</li>
+		</ul>
+
+		<h3>Persistence design:</h3>
+		(Reference: (C) highscalability link to be inserted)
+		<ul>
+			<li>Durability? On power failure?</li>
+			<li>Memtable/SSTable; Apend-only B-tree; B-tree; On-disk linked lists;
+				In-memory replicated; In-memory snapshots; In-memory only; Hash; Pluggable.
+			</li>
+		</ul>
+
+		<h2>Cluster 2: Consistency Model</h2>
+
+		<h3>Global consistency model:</h3>
+		<ul>
+			<li>ACID / BASE / WATER?</li>
+			<li>Ability to (fine) tune the consistency model</li>
+		</ul>
+
+		<h3>CAP tradeoff:</h3>
+		<ul>
+			<li>CP, AP, CA or tunable?</li>
+		</ul>
+
+		<h2>Cluster 3: Performance Dimensions</h2>
+
+		<ul>
+			<li>Latency / Request behaviour / distribution [High = 10, Low = 0]</li>
+
+			<li>Throughput [High = 10, Low = 0]</li>
+
+			<li>High Concurrency?</li>
+		</ul>
+
+
+		<h2>Cluster 4: Query Requirements</h2>
+
+		<ul>
+			<li>Typical queries look like?</li>
+			<li>SQL needed? LINQ needed?</li>
+			<li>BI / Analytic-Tools needed? (M/R sufficient?)</li>
+			<li>Ad-Hoc Queries needed?</li>
+			<li>Map/Reduce needed? Background data analytics?</li>
+			<li>Secondary Indices</li>
+			<li>Range queries</li>
+			<li>Weird aggregations</li>
+			<li>ColumnDB needed for Analytics?</li>
+			<li>Views</li>
+		</ul>
+
+
+		<h2>Cluster 5: Architecture and Patterns</h2>
+
+		<h3>Architecture looks like:</h3>
+		<ul>
+			<li>local, parallel, distributed / grid, service, cloud, mobile, p2p, …</li>
+			<li>Hosted? Cloud? Local? Datacenter?</li>
+		</ul>
+
+		<h3>Data Access Patterns</h3>
+		<ul>
+			<li>read / write distribution?</li>
+			<li>random / sequential access?</li>
+			<li>Access Design Patterns</li>
+		</ul>
+
+		<h2>Cluster 6: Non functional Requirements</h2>
+
+		<ul>
+			<li>Replication needed? = Rubustness</li>
+			<li>Automatic load balancing, partitioning, and repartitioning?</li>
+			<li>Auto-Scaling</li>
+			<li>Text search integration? Lucene / Solr?</li>
+			<li>Refactoring Frequency?</li>
+			<li>24/7 System? Live add and remove?</li>
+			<li>Developer Qualification</li>
+			<li>DB simplicity? (installation, configuration, development, deployment, upgrade)</li>
+			<li>Company restrictions?</li>
+			<li>DB diversity (allowed?)</li>
+			<li>Security? (authentication, authorization, validation?)</li>
+			<li>Licence Model?</li>
+			<li>Vendor trustworthiness?</li>
+			<li>Community support?</li>
+			<li>Documentation?</li>
+			<li>Company and DB dev in the future?</li>
+		</ul>
+
+		<h3>Costs:</h3>
+		<ul>
+			<li>DB-Support? (responsiveness, SLA)</li>
+			<li>Costs in general, Scaling Costs</li>
+			<li>Sysadmin costs</li>
+			<li>Operational Costs: (noOps)</li>
+			<li>Safety / Backup &amp; Restore</li>
+			<li>Crash Resistance, Disaster Management</li>
+			<li>Monitoring</li>
+		</ul>
+
+	</div>
+
+	<footer>
+		<p>[This "NoSQL Archive" has always <strong>&gt; 40.000 unique visitors</strong> per month, it is <strong>top
+			rated</strong> on Google for "nosql", and is the <strong>#1</strong>
+			source for NoSQL <strong>system</strong>.]
+		</p>
+		<p><a href="feedback.html">&raquo; Contact &amp; Feedback</a> | <a href="impressum.html">&raquo; Imprint</a></p>
+	</footer>
+</div>
+</body>
+</html>
