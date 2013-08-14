@@ -705,28 +705,26 @@ Supports multiple graph models. Written in Java
 	<h2>Multimodel Databases</h2>
 
 	<article>
-		<h3><a href="http://www.datomic.com/">Datomic</a></h3>
-		API: <strong>Many jvm languages</strong>, Protocol: <strong>Native + REST</strong>, Query Method: <strong>Datalog + custom extensions</strong>, Scaling: <strong>elastic via underlying DB (in-mem, DynamoDB, Riak, CouchBase, Infinispan, more to come)</strong>, Written in: <strong>Clojure</strong>, Concurrency: <strong>ACID</strong> MISC: smart caching, unlimited read scalability, full-text search, cardinality, bi-directional refs 4 graph traversal, loves Clojure + Storm.
+		<h3><a href="http://www.arangodb.org/">ArangoDB</a></h3>
+		API: <strong>REST, Graph Blueprints, C#, D, Ruby, Python, Java, PHP, Go, Python, etc. </strong>
+		Data Model: <strong>K/V, JSON &amp; graphs with shapes,
+	    </strong> Protocol: <strong>HTTP using JSON</strong>,
+		Query Method: <strong>declarative AQL, query by example, map/reduce, key/value,</strong>
+		Replication: <strong>master-master asynchronous, master-master synchronous,</strong> Written in: <strong>C/C++/Javascript (V8 integrated),</strong>
+		Concurrency: <strong>MVCC, tunable</strong>
+		Misc: <strong>"stored procedures" (Ruby &amp; Javascript)</strong>, many indices as <strong>secondary, fulltext, geo, hash, Skip-list, bit-array, n-gram, capped collections</strong>
 	</article>
 
 	<article>
-		<h3><a href="http://www.arangodb.org/">ArangoDB</a></h3>
-		API: <strong>REST, blueprint, different programming languages like Ruby, Python, Java, PHP,</strong>
-		Data Model: <strong>document oriented &amp; graphs with shapes,</strong> Protocol: <strong>HTTP using
-		JSON</strong>,
-		Query Method: <strong>declarative query language, query by example, map/reduce, key/value,</strong>
-		Replication: <strong>master-master asynchronous, master-master synchronous,</strong> Written in: <strong>C/C++/Javascript
-		(using V8),</strong>
-		Concurrency: <strong>MVCC,</strong> Misc: <strong>"stored procedures" (in Ruby &amp; Javascript),schema-free
-		schematas,</strong>
-		<small>(note: work in progress, this list includes features for V2 available in Autumn 2012),</small>
-	</article>
-
-		<article>
 		<h3><a href="http://www.orientechnologies.com/">OrientDB</a></h3>
 		Languages: <strong>Java</strong>, Schema: <strong>Has features of an Object-Database, DocumentDB, GraphDB or
 		Key-Value DB</strong>, Written in: <strong>Java</strong>, Query Method: <strong>Native and SQL</strong>, Misc:
 		<strong>really fast, lightweight, ACID with recovery</strong>.
+	</article>
+
+	<article>
+		<h3><a href="http://www.datomic.com/">Datomic</a></h3>
+		API: <strong>Many jvm languages</strong>, Protocol: <strong>Native + REST</strong>, Query Method: <strong>Datalog + custom extensions</strong>, Scaling: <strong>elastic via underlying DB (in-mem, DynamoDB, Riak, CouchBase, Infinispan, more to come)</strong>, Written in: <strong>Clojure</strong>, Concurrency: <strong>ACID</strong> MISC: smart caching, unlimited read scalability, full-text search, cardinality, bi-directional refs 4 graph traversal, loves Clojure + Storm.
 	</article>
 
 		<article>
