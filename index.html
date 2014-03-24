@@ -530,7 +530,7 @@ NoSQL and the Enterprise Data is stored as key-value pairs, which are written to
 
 <article><h3><a href="https://github.com/shuttler/nessDB">nessDB</a></h3>
 	A fast key-value Database (using LSM-Tree storage engine), API: <strong>Redis protocol</strong>
-	(SET,MSET,GET,MGET,DEL etc.), Written in: ANSI C
+	(SET,MSET,GET,MGET,DEL etc.), Written in: <strong>ANSI C</strong>
 </article>
 
 <article><h3><a href="http://hyperdex.org/">HyperDex</a></h3>
@@ -538,6 +538,11 @@ NoSQL and the Enterprise Data is stored as key-value pairs, which are written to
 	throughput), scalable, consistent, fault tolerance, using hyperscpace
 	hashing. APIs for C, C++ and Python.
 </article>
+
+<article><h3><a href="https://github.com/simonhf/sharedhashfile">SharedHashFile</a></h3>
+	Fast, open source, shared memory (using memory mapped files e.g. in /dev/shm or on SSD), multi process, hash table, e.g. on a 16 vCPU Rackspace server using /dev/shm, 16 processes combined have a 2.5 million / 1.5 million TPS read/write using small binary keys to a hash file containing 100 million keys. Uses sharding internally to mitigate lock contention. Written in <strong>C</strong>.
+</article>
+
 
 <article>
 	<h3><a href="http://sphia.org">Sophia</a></h3>
