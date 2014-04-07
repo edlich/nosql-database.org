@@ -1,12 +1,22 @@
 # NoSQL Database
 
-Repository for the #1 NoSQL rated list http://nosql-database.org which includes:
-* All NoSQL Databases! (> 150)
-* A historic archive
-* A blog
-* Great NoSQL Events
+Repository for http://nosql-database.org
 
-We do acceppt pull requests. However there are strict rules.
-Please have a look at the bottom page -> contact and feedback!
+Currently all stuff is done statically and the markup has to be "optimized".
 
-This site is additionally totally independent and has no financial interests.
+Revamped the table layout to a CSS based layout with html5 markup.
+
+## Modifying the site's styles
+
+In newer revisions the CSS generation is done by compass.
+
+With `gem install compass` and afterwards
+
+* `cd Resources/Private/Sass/`
+* `compass watch .`
+
+the CSS is generated dynamically.
+
+## Todo
+
+* Migrate to Jekyll
