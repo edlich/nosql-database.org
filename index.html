@@ -549,6 +549,11 @@ NoSQL and the Enterprise Data is stored as key-value pairs, which are written to
 Fast, open source, shared memory (using memory mapped files e.g. in /dev/shm or on SSD), multi process, hash table, e.g. on an 8 core i7-3720QM CPU @ 2.60GHz using /dev/shm, 8 processes combined have a 12.2 million / 2.5 to 5.9 million TPS read/write using small binary keys to a hash filecontaining 50 million keys. Uses sharding internally to mitigate lock contention. Written in <strong>C</strong>.
 </article>
 
+<article>
+	<h3><a href="http://symas.com/mdb/">Symas LMDB</a></h3>
+	Ultra-fast, ultra-compact key-value embedded data store developed by Symas for the OpenLDAP Project.
+	It uses memory-mapped files, so it has the read performance of a pure in-memory database while still offering the persistence of standard disk-based databases, and is only limited to the size of the virtual address space, (it is not limited to the size of physical RAM)
+</article>
 
 <article>
 	<h3><a href="http://sphia.org">Sophia</a></h3>
