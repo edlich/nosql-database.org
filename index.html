@@ -750,6 +750,7 @@ Embedded solution.
 
 <section>
 	<h2>Graph Databases</h2>
+
 	<article><h3><a href="http://www.neo4j.org/">Neo4J</a></h3>
 		API: <strong>lots of langs</strong>,
 		Protocol: <strong>Java embedded / REST</strong>, Query Method: <strong>SparQL, nativeJavaAPI, JRuby</strong>,
@@ -758,8 +759,14 @@ Embedded solution.
 		Written in: <strong>Java</strong>, Concurrency: <strong>non-block reads, writes locks involved
 			nodes/relationships until commit</strong>,
 		Misc: <strong>ACID</strong>
-		possible, Links: Video <a href="http://www.infoq.com/presentations/emil-eifrem-neo4j">&raquo;</a>, good Blog <a
-				href="http://blog.neo4j.org/">&raquo;</a></article>
+		possible, Links: Video <a href="http://www.infoq.com/presentations/emil-eifrem-neo4j">&raquo;</a>, Blog <a
+				href="http://blog.neo4j.org/">&raquo;</a>
+	</article>
+
+	<article>
+		<h3><a href="http://www.arangoDB.com/">ArangoDB</a></h3>
+		(<strong>Doc Store</strong> & GraphDB & Key-Value. More details in Category <a href="#multimodel">Multimodel Databases</a>)
+</article>
 
 	<article><h3><a href="http://www.infinitegraph.com/">Infinite Graph</a></h3>
 		(by Objectivity) API: <strong>Java</strong>,
@@ -901,23 +908,30 @@ Supports multiple graph models. Written in Java
 <section>
 	<h2 id="multimodel">Multimodel Databases</h2>
 
-	<article>
-		<h3><a href="http://www.arangodb.com/">ArangoDB</a></h3>
-		API: <strong>REST, Graph Blueprints, C#, D, Ruby, Python, Java, PHP, Go, Python, etc. </strong>
-		Data Model: <strong>K/V, JSON &amp; graphs with shapes,
-	    </strong> Protocol: <strong>HTTP using JSON</strong>,
-		Query Method: <strong>declarative AQL, query by example, map/reduce, key/value,</strong>
-		Replication: <strong>master-slave (m-m to follow)</strong>, Sharding: <strong>automatic and configurable</strong> Written in: <strong>C/C++/Javascript (V8 integrated),</strong>
-		Concurrency: <strong>MVCC, tunable</strong>
-		Misc: <strong>"stored procedures" (Ruby &amp; Javascript)</strong>, many indices as <strong>secondary, fulltext, geo, hash, Skip-list, bit-array, n-gram, capped collections</strong>
-	</article>
-
-	<article>
+<article>		
+<h3><a href="https://www.arangodb.com/">ArangoDB</a></h3>
+		API: 
+<strong>REST, Graph Blueprints, C#, D, Ruby, Python, Java, PHP, Go, Python, etc. </strong>
+		Data Model: 
+<strong>Documents, Graphs and Key/Values.</strong>
+                Protocol: 
+<strong>HTTP using JSON.</strong>
+		Query Method: 
+<strong>declarative query language (AQL), query by example.</strong>
+		Replication: 
+<strong>master-slave (m-m to follow)</strong>, Sharding: <strong>automatic and configurable</strong> Written in: <strong>C/C++/Javascript (V8 integrated),</strong>
+		Concurrency: 
+<strong>MVCC, tuneable</strong>
+		Misc: 
+<strong>ACID transactions, microservices framework "Foxx" (Javascript)</strong>, many indices as <strong>secondary, fulltext, geo, hash, Skip-list, capped collections</strong>
+</article>
+	
+<article>
 		<h3><a href="http://www.orientechnologies.com/">OrientDB</a></h3>
 		Languages: <strong>Java</strong>, Schema: <strong>Has features of an Object-Database, DocumentDB, GraphDB or
 		Key-Value DB</strong>, Written in: <strong>Java</strong>, Query Method: <strong>Native and SQL</strong>, Misc:
 		<strong>really fast, lightweight, ACID with recovery</strong>.
-	</article>
+</article>
 
 	<article>
 		<h3><a href="http://www.datomic.com/">Datomic</a></h3>
@@ -926,10 +940,7 @@ Supports multiple graph models. Written in Java
 
 <article>
 	<h3><a href="http://www.foundationdb.com/" target="_blank">FoundationDB</a></h3>
-	An ordered key-value store with <strong>multikey ACID transactions, replicated storage, and fault tolerance, built on a shared-nothing, distributed</strong> architecture. 
-	API: <strong>Python, Ruby, Node, Java, C</strong>. Written In: <strong>Flow, C++</strong>. 
-	Data models: <strong>layers for tuples, arrays, tables, 
-	SQL, graphs, documents, time series, GEOSpatial</strong>. 
+	Bought by Apple Inc. Not available any more.
 </article>
 
 
