@@ -15,13 +15,6 @@
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
-	<!-- statcounter -->
-	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-1535339-3");
-			pageTracker._trackPageview();
-		} catch (err) {
-		}</script>
 </head>
 
 <body>
@@ -67,7 +60,7 @@
 	</article>
 </section>
 
-<h1>List Of NoSQL Databases <span class="grey">[currently 150]</span></h1>
+<h1>List Of NoSQL Databases <span class="grey">[currently >225]</span></h1>
 
 <p> Core NoSQL Systems: [Mostly originated out of a Web 2.0 need]</p>
 
@@ -168,6 +161,17 @@ Misc: ACID, built-in data compression, scheduler, automatic cyclic storage manag
   		Splice Machine is an RDBMS built on <a href="http://hadoop.apache.org/">Hadoop</a>, <a href="http://hbase.apache.org/">HBase</a> and <a href="http://db.apache.org/derby/">Derby</a>. Scale real-time applications using commodity hardware without application rewrites,
 Features: <strong>ACID transactions, ANSI SQL support, ODBC/JDBC, distributed computing</strong>
 </article>
+
+<article>
+  		<h3><a href="http://financial.mcobject.com/">eXtremeDB Financial Edition</a></h3>
+massively scalable in-memory and persistent storage DBMS for analytics on market data
+(and other time series data). 
+APIs: <strong>C/C++, Java Native Interface (JNI), C#/.NET), Python, SQL (native, ODBC, JDBC)</strong>, 
+Data layout: <strong>row, columnar, hybrid,</strong> 
+Written in: <strong>C, Replication: master/slave, cluster, sharding, </strong>
+Concurrency: <strong>Optimistic (MVCC) and pessimistic (locking)</strong>
+</article>
+
 <article>
   <h3><a href="http://concoursedb.com/">ConcourseDB</a></h3> a distributed self-tuning database with
   <a href="http://concoursedb.com/blog/index-all-the-things/">automatic indexing</a>, version control and ACID transactions.
@@ -455,6 +459,13 @@ Secondary & composite indexes. Transparently serializes Java/.NET objects.
 </article>
 
 <article>
+	<h3><a href="http://rocksdb.org" target="_blank">RocksDB</a></h3>
+	API: <strong>C++</strong>. Written in C++.
+	Facebook`s improvements to Google`s LevelDB to speed throughput
+	for datasets larger than RAM. Embedded solution.
+</article>
+
+<article>
 	<h3><a href="http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html" target="_blank">Berkeley DB</a></h3>
 	API: <strong>Many languages</strong>, Written in: <strong>C</strong>, Replication: <strong>Master / Slave</strong>,
 	Concurrency: <strong>MVCC</strong>,
@@ -713,13 +724,6 @@ BerkeleyDB are available, plus full paper and presentation slides.
 <article>
 	<h3><a href="http://dbreeze.codeplex.com" target="_blank">DBreeze</a></h3>
 	Professional, open-source, NoSql (embedded Key/Value storage), transactional, ACID-compliant, multi-threaded, object database management system for .NET 3.0> MONO. Written in C#.
-</article>
-
-<article>
-	<h3><a href="http://rocksdb.org" target="_blank">RocksDB</a></h3>
-	API: <strong>C++</strong>. Written in C++.
-	Facebook`s improvements to Google`s LevelDB to speed throughput
-	for datasets larger than RAM. Embedded solution.
 </article>
 
 <article>
@@ -1667,12 +1671,6 @@ Next-gen NoSQL encrypted document store. Multi-recipient / group encryption. Fea
 
 	<h3>NoSQL RELATED EVENTS:</h3>
 	<ul>
-		<li>
-		18-20Aug <strong>NoSQL Now!</strong> <a href="http://nosql2015.dataversity.net/" target="_blank">&raquo;</a>
-		</li>
-	<li>
-		19.Sept <strong>Distributed Matters:</strong> Berlin & Barcelona <a href="https://distributed-matters.org/" target="_blank">&raquo;</a>
-	</li>
 	<li>
     12/13 Oct <strong>Flink Forward</strong> <a href="http://flink-forward.org/" target="_blank">&raquo;</a> 
 	</li>
