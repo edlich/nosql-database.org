@@ -1,7 +1,7 @@
 # NoSQL Database
 
 Repository for the #1 NoSQL rated list http://nosql-database.org which includes:
-* All NoSQL Databases! (> 150)
+* All NoSQL Databases! (> 220)
 * A historic archive
 * A blog
 * Great NoSQL Events
