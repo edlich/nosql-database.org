@@ -617,6 +617,17 @@ NoSQL and the Enterprise Data is stored as key-value pairs, which are written to
 	Other: <strong>call Lua stored procedures.</strong>
 </article>
 
+<article><h3><a href="https://github.com/OpenHFT/Chronicle-Map" target="_blank">Chronicle Map</a></h3>
+        In-memory (opt. persistence via mmap), highly concurrent, low-latency key-value store.
+	API: <strong>Java</strong>.
+	Written in: <strong>Java</strong>.
+	Protocol: in-process Java, remote via
+	<a href="http://chronicle.software/products/chronicle-engine/" target="_blank">Chronicle Engine</a> + Wire:
+	binary, text, Java, C# bindnings.
+	Concurrency: in-memory lock striping, read-write locks.
+	Replication: <strong>multi-master, eventually consistent</strong>.
+</article>
+
 <article><h3><a href="http://code.google.com/p/maxtable/" target="_blank">Maxtable</a></h3>
 	API: <strong>C</strong>, Query Method: <strong>MQL, native API</strong>, Replication:
 	<strong>DFS Replication</strong>, Consistency: <strong>strict consistency</strong> Written
