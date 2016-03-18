@@ -6,7 +6,7 @@ Repository for the #1 NoSQL rated list http://nosql-database.org which includes:
 * A blog
 * Great NoSQL Events
 
-We do acceppt pull requests. However there are strict rules.
+We do accept pull requests. However there are strict rules.
 Please have a look at the bottom page -> contact and feedback!
 
 This site is additionally totally independent and has no financial interests.
