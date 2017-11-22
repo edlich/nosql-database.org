@@ -1247,17 +1247,8 @@ A new concept to ‘NoSQL’ databases where a memory allocator and a transactio
 
     <article>
         <h3><a href="http://www.newtdb.org/">Newt DB</a></h3>
-        
-        Newt builds on ZODB and Postgresql.
-        Newt leverages the pluggable storage layer of the ZODB to use RelStorage to store data in Postgres.  
-        Newt adds conversion of data from the native serialization used by ZODB to JSON, stored in a Postgres JSONB column. The JSON data supplements the native data to support indexing, search, and access from non-Python applications.
-        Newt adds a search API for searching the Postgres JSON data and returning persistent objects.
-
-        Query Method: <strong>Postgres SQL, ZODB API</strong>,
-		Replication: <strong>Postgres, ZEO, ZEORAID, RelStorage</strong>,
-		Written in: <strong>Python</strong>,
-		Concurrency: <strong>MVCC</strong>,
-        License: <strong>MIT Licence</strong>
+Newt DB leverages the pluggable storage layer of ZODB to use RelStorage to store data in Postgres.  
+Newt adds conversion of data from the native serialization used by ZODB to JSON, stored in a Postgres JSONB column. The JSON data supplements the native data to support indexing, search, and access from non-Python applications. It adds a search API for searching the Postgres JSON data and returning persistent objects. Query Method: <strong>Postgres SQL, ZODB API</strong>, Replication: <strong>Postgres, ZEO, ZEORAID, RelStorage</strong>, Written in: <strong>Python</strong>, Concurrency: <strong>MVCC</strong>, License: <strong>MIT</strong>
     </article>
 
 	<article>
