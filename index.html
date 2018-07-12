@@ -5,7 +5,7 @@
 	<meta name="author" content="Prof. Dr.Stefan Edlich">
 	<meta name="publisher" content="Prof. Dr.Stefan Edlich">
 	<meta name="description"
-		  content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books and much more...">
+		  content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books, and much more...">
 	<meta name="robots" content="index, follow">
     <meta charset="utf-8">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
@@ -21,7 +21,7 @@
 <div id="wrapper">
 <header>
 	<div class="third">
-		<img width="251" height="61" alt="NoSQL Logo" src="Resources/Public/Img/nosql-logo.gif">
+		<img width="251" height="61" alt="NOSQL Logo" src="Resources/Public/Img/nosql-logo.gif">
 	</div>
 	<div class="third">
 		Your Ultimate Guide to the <br/>
@@ -43,7 +43,7 @@
 <section>
 	<article>
 		<dl>
-			<dt>NoSQL DEFINITION: </dt>
+			<dt>NOSQL DEFINITION: </dt>
       Next Generation Databases mostly addressing <u>some of the points</u>: being <strong>non-relational,
 				distributed, open-source</strong> and <strong>horizontally scalable</strong>.
 		</dl>
@@ -51,18 +51,18 @@
 	 	The movement began early 2009 and
 		is growing rapidly. Often more characteristics apply such as: <strong>schema-free,
 		easy replication support, simple API, eventually consistent</strong> / <strong>BASE</strong> (not ACID), a
-		<strong>huge amount of data</strong> and more. So the misleading term <em>"nosql</em>" (the community now
+		<strong>huge amount of data</strong> and more. So the misleading term <em>"nosql"</em> (the community now
 		translates it mostly with "<strong>not only sql</strong>") should be seen as an alias to something like the
 		definition above.
-		<small> [based on 7 sources, 15 constructive feedback emails (thanks!) and 1 disliking comment
-		. Agree / Disagree? <a href="mailto:edlich@gmail.com">Tell</a> me so! By the
+		<small> [based on 7 sources, 15 constructive feedback emails (thanks!) and 1 disliking comment.
+		Agree / Disagree? <a href="mailto:edlich@gmail.com">Tell</a> me so! By the
 		way: this is a strong definition and it is out there here since 2009!]</small>
 	</article>
 </section>
 
-<h1>List Of NoSQL Databases <span class="grey">[currently >225]</span></h1>
+<h1>List Of NOSQL Databases <span class="grey">[currently >225]</span></h1>
 
-<p> Core NoSQL Systems: [Mostly originated out of a Web 2.0 need]</p>
+<p> Core NOSQL Systems: [Mostly originated out of a Web 2.0 need]</p>
 
 <section>
 	<h2>Wide Column Store / Column Families</h2>
@@ -1034,10 +1034,26 @@ Supports multiple graph models. Written in Java
 		<a href="http://www.onyxdevtools.com/learn/tutorials/">Tutorials</a>
 </article>
 
-	<article><h3><a href="http://www.openlinksw.com/">OpenLink Virtuoso</a></h3>
-		<strong>Hybrid</strong> DBMS covering the following models: <strong>Relational, Document, Graph</strong>
+	<article>
+		<h3><h3><a href="http://virtuoso.openlinksw.com/" target="_blank">OpenLink Virtuoso</a></h3> 
+			a/k/a <strong>Virtuoso Universal Server</strong>
+		Multi-model (hybrid)</strong> DBMS supporting <strong>SQL/Tabular Relational (SQL), 
+		        RDF/Graph Relational (SPARQL), XML (XPath, XQuery), Text/Document/Object, and more, 
+		        available in Community (Open Source) and Enterprise (Commercial) Editions.
+		<strong>API:</strong> ODBC, JDBC, OLE DB, ADO.NET, JSON, RDF4J/Sesame, Redland, SPARQL, others;
+		<strong>Protocol:</strong>REST, SPARQL, ODBC, JDBC, OLE DB, ADO.NET, HTTP, others;
+		<strong>Query Method:</strong> SQL, SPARQL, SPARQL-in-SQL (SPASQL), XPath, XQuery, others;
+		<strong>Replication:</strong> (Enterprise Edition) Star, Chain, and/or Bi-Directional 
+		        Replication Clusters, as well as Shared-Nothing Elastic Clusters;
+		<strong>Written in:</strong> C/C++, extensible via C/C++, Java, Perl, Python, PHP, others;
+		<strong>Concurrency:</strong> ACID; 
+		<strong>Misc</strong>: <br>
+		<strong>Links</strong>:
+		<a href="http://docs.openlinksw.com/virtuoso">Virtuoso manual</a>, 
+			<a href="http://github.com/openlink/virtuoso-opensource/">Open Soure Project</a>
+		(partitioning / clusering), <a href="http://www.drdobbs.com/java/223100116">&raquo; Dr. Dobbs</a>
 	</article>
-	
+
 	<article>
 		<h3><a href="https://github.com/jnidzwetzki/bboxdb/" target="_blank">BBoxDB</a></h3>
 		A distributed data store for multi-dimensional data. BBoxDB enhances the key-value data model by a bounding box, which describes the location of a value in an n-dimensional space. Data can be efficiently retrieved using hyperrectangle queries. Spatial joins and dynamic data redistribution are also supported.
@@ -1102,6 +1118,26 @@ Supports multiple graph models. Written in Java
 		Misc:
 <strong>ACID transactions, microservices framework "Foxx" (Javascript)</strong>, many indices as <strong>secondary, fulltext, geo, hash, Skip-list, capped collections</strong>
 </article>
+
+	<article>
+		<h3><h3><a href="http://virtuoso.openlinksw.com/" target="_blank">OpenLink Virtuoso</a></h3> 
+			a/k/a <strong>Virtuoso Universal Server</strong>
+		Multi-model (hybrid)</strong> DBMS supporting <strong>SQL/Tabular Relational (SQL), 
+		        RDF/Graph Relational (SPARQL), XML (XPath, XQuery), Text/Document/Object, and more, 
+		        available in Community (Open Source) and Enterprise (Commercial) Editions.
+		<strong>API:</strong> ODBC, JDBC, OLE DB, ADO.NET, JSON, RDF4J/Sesame, Redland, SPARQL, others;
+		<strong>Protocol:</strong>REST, SPARQL, ODBC, JDBC, OLE DB, ADO.NET, HTTP, others;
+		<strong>Query Method:</strong> SQL, SPARQL, SPARQL-in-SQL (SPASQL), XPath, XQuery, others;
+		<strong>Replication:</strong> (Enterprise Edition) Star, Chain, and/or Bi-Directional 
+		        Replication Clusters, as well as Shared-Nothing Elastic Clusters;
+		<strong>Written in:</strong> C/C++, extensible via C/C++, Java, Perl, Python, PHP, others;
+		<strong>Concurrency:</strong> ACID; 
+		<strong>Misc</strong>: <br>
+		<strong>Links</strong>:
+		<a href="http://docs.openlinksw.com/virtuoso">Virtuoso manual</a>, 
+			<a href="http://github.com/openlink/virtuoso-opensource/">Open Soure Project</a>
+		(partitioning / clusering), <a href="http://www.drdobbs.com/java/223100116">&raquo; Dr. Dobbs</a>
+	</article>
 
 <article>
 		<h3><a href="http://orientdb.com/">OrientDB</a></h3>
