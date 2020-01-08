@@ -1,12 +1,6 @@
 # NoSQL Database
 
-Repository for the #1 NoSQL rated list http://nosql-database.org which includes:
-* All NoSQL Databases! (> 2>0)
-* A historic archive
-* A small blog
-* Some NoSQL Events
+This repo was the foundatoin for the #1 NoSQL rated list http://nosql-database.org.
 
-We do accept pull requests! However there are strict rules.
-Please have a look at the bottom page -> contact and feedback!
-
-This site is additionally totally independent and has no financial interests!
+However as the domain has been sold, this is the snapshot till 2019.
+The content of nosql-database.org is not longer maintained by my.
